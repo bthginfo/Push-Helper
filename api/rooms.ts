@@ -1,7 +1,7 @@
 import {get,put,BlobPreconditionFailedError}from '@vercel/blob';
 import {createHash,randomBytes,randomUUID}from 'node:crypto';
 import type {IncomingMessage,ServerResponse}from 'node:http';
-import program from '../src/data/program.json';
+import program from '../src/data/program.json' with {type:'json'};
 import type {Profile,RoomData}from '../src/lib/types';
 
 const ids=new Set(program.sessions.map(s=>s.id));
