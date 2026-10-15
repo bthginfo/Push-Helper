@@ -63,6 +63,15 @@ function SpeakerAvatar({ speaker }: { speaker: Session['speakers'][number] }) {
   return <span className="speaker-avatar">{speaker.image && !failed ? <img src={speaker.image} alt="" loading="lazy" onError={() => setFailed(true)} /> : speaker.name.split(' ').map(part => part[0]).slice(0, 2).join('')}</span>;
 }
 
+function SessionOptions({ items, children }: { items: Session[]; children: ReactNode }) {
+  if (!items.every(session => session.group === 'B')) return <>{children}</>;
+  const label = items.length === 1 && items[0].type === 'Pause' ? 'Mittagspause' : `${items.length} ${items.length === 1 ? 'Option' : 'Optionen'}`;
+  return <details className="group-b-options">
+    <summary><span><strong>Gruppe B</strong><span>{label}</span></span><ChevronDown size={18} aria-hidden="true" /></summary>
+    <div className="group-b-content">{children}</div>
+  </details>;
+}
+
 function SessionDetails({ session, onClose, selected, onToggle, otherSelected, yourName }: { session: Session; onClose: () => void; selected: boolean; onToggle: () => void; otherSelected: boolean; yourName: string }) {
   return <Modal label={session.title} onClose={onClose} className="session-modal">
     <div className="detail-content">
@@ -243,9 +252,9 @@ export default function App() {
                 const groupLive = items.some(item => sessionState(item, now) === 'live');
                 const groupUpcoming = !groupLive && items.some(item => sessionState(item, now) === 'upcoming');
                 const groupBreak = items.every(isBreak);
-                return <section className={`time-group ${groupLive ? 'time-group-live' : ''} ${groupBreak ? 'time-group-break' : ''}`} key={start} data-live={groupLive} data-upcoming={groupUpcoming} style={{ animationDelay: `${Math.min(groupIndex, 7) * 35}ms` }}>
+                return <section className={`time-group ${groupLive ? 'time-group-live' : ''} ${groupBreak ? 'time-group-break' : ''}`} key={`${day}-${start}`} data-live={groupLive} data-upcoming={groupUpcoming} style={{ animationDelay: `${Math.min(groupIndex, 7) * 35}ms` }}>
                   <div className="time-label"><span>{start}</span><i className="rail-dot" />{groupLive && <small>JETZT</small>}</div>
-                  <div className="time-sessions">{items.length > 1 && <span className="parallel-label">{items.length} Sessions zur gleichen Zeit <span>Wähle deinen Impuls</span></span>}{items.map(session => {
+                  <div className="time-sessions"><SessionOptions items={items}>{items.length > 1 && <span className="parallel-label">{items.length} Sessions zur gleichen Zeit <span>Wähle deinen Impuls</span></span>}{items.map(session => {
                     const selected = ownFavorites.includes(session.id); const you = planner.favorites.you.includes(session.id); const daniel = planner.favorites.daniel.includes(session.id); const state = sessionState(session, now);
                     return <article className={`session-row ${isBreak(session) ? 'break-row' : ''} ${isBreak(session) && /lunch|mittag/i.test(session.title) ? 'lunch-row' : ''} ${state === 'ended' ? 'session-ended' : ''} ${state === 'live' ? 'session-live' : ''}`} key={session.id}>
                       <button className="session-open" onClick={() => setActiveSession(session)} aria-label={`Details: ${session.title}`}>
@@ -253,7 +262,7 @@ export default function App() {
                       </button>
                       {!isBreak(session) && <button className={`favorite-button ${selected ? 'is-favorite' : ''}`} onClick={() => toggleFavorite(session.id)} aria-pressed={selected} aria-label={`${session.title}: ${selected ? 'aus meiner Auswahl entfernen' : 'zu meiner Auswahl hinzufügen'}`}><Heart size={19} strokeWidth={1.7} fill={selected ? 'currentColor' : 'none'} /></button>}
                     </article>;
-                  })}</div>
+                  })}</SessionOptions></div>
                 </section>;
               }) : <div className="empty-state"><span className="empty-icon">{hasFilters ? <Search size={28} /> : <Heart size={28} />}</span><h2>{hasFilters ? 'Noch kein Treffer.' : 'Platz für gute Ideen.'}</h2><p>{hasFilters ? 'Versuch einen anderen Suchbegriff oder lockere deine Filter.' : `Am ${shortDate(day)} hast du noch nichts vorgemerkt. Ein Herz im Programm genügt.`}</p><button className="secondary-button" onClick={hasFilters ? resetFilters : () => changeView('agenda')}>{hasFilters ? 'Alle Filter zurücksetzen' : 'Programm entdecken'}<ArrowRight size={15} /></button></div>}
             </div>
