@@ -1,0 +1,1888 @@
+{
+  "updatedAt": "2026-10-15T06:51:47.957Z",
+  "sourceUrl": "https://push-conference.com/program",
+  "sessions": [
+    {
+      "id": "2026-10-22-doors-open-check-in",
+      "day": "2026-10-22",
+      "start": "09:00",
+      "end": "10:00",
+      "endEstimated": true,
+      "title": "Einlass & Check-in",
+      "type": "Organisation",
+      "room": "Alte Kongresshalle",
+      "speakers": [],
+      "tldr": "Badge abholen, ankommen und die Location erkunden.",
+      "description": [
+        "Der Konferenztag beginnt mit dem Check-in. Plane Zeit für dein Badge und die Orientierung vor dem ersten Talk ein."
+      ],
+      "sourceUrl": "https://push-conference.com/program#thu-22-oct",
+      "tags": [],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-22-simple-is-harder-than-ever",
+      "day": "2026-10-22",
+      "start": "10:00",
+      "end": "11:00",
+      "endEstimated": true,
+      "title": "Simple Is Harder Than Ever",
+      "type": "Keynote",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Kris Hedstrom",
+          "role": "Head of UX Design & Research",
+          "company": "On",
+          "bio": "Kris Hedstrom · Head of UX Design & Research · On",
+          "image": "https://push-conference.com/assets/kris-hedstrom-Dtqigza8.png"
+        }
+      ],
+      "tldr": "Warum gutes Design in einer Welt schneller KI-Produktion vor allem Komplexität reduzieren muss.",
+      "description": [
+        "Kris Hedstrom zeigt anhand seiner Arbeit mit großen Designteams, wie sich neue Funktionen und KI-Erlebnisse auf Verständlichkeit auswirken. Es geht um bewusste Produktentscheidungen, zusammenhängende Erfahrungen und die Frage, welche Ideen überhaupt gebaut werden sollten."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/simple-is-harder-than-ever",
+      "tags": [
+        "KI & Design",
+        "Leadership",
+        "Product & Craft"
+      ],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-22-craft-and-confidence",
+      "day": "2026-10-22",
+      "start": "11:00",
+      "end": "11:30",
+      "endEstimated": true,
+      "title": "Craft & Confidence",
+      "type": "Keynote",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Kevin Cannon",
+          "role": "Design Director",
+          "company": "Superhuman",
+          "bio": "Kevin Cannon · Design Director · Superhuman",
+          "image": "https://push-conference.com/assets/kevin-cannon-Bolw_1y_.png"
+        }
+      ],
+      "tldr": "Kevin Cannon von Superhuman über Craft und Selbstvertrauen im Design.",
+      "description": [
+        "Der Veranstalter hat bisher noch keine ausführliche Beschreibung dieser Keynote veröffentlicht. Titel, Speaker, Zeit und Bühne sind bestätigt. Aktuelle Ergänzungen findest du über den Link zur offiziellen Session."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/craft-and-confidence",
+      "tags": [
+        "Product & Craft"
+      ],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-22-designing-between-two-intelligences",
+      "day": "2026-10-22",
+      "start": "11:30",
+      "end": "12:00",
+      "endEstimated": true,
+      "title": "Designing Between Two Intelligences",
+      "type": "Keynote",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Chelsea Larsson",
+          "role": "Head of Content Design",
+          "company": "Anthropic",
+          "bio": "Chelsea Larsson · Head of Content Design · Anthropic",
+          "image": "https://push-conference.com/assets/chelsea-larsson-rjnuyPxL.png"
+        }
+      ],
+      "tldr": "Content Design für zwei Zielgruppen zugleich: Menschen und KI-Modelle.",
+      "description": [
+        "Bei Anthropic gehören Prompts, Systemanweisungen und redaktionelle Regeln zum Alltag des Content Designs. Chelsea Larsson berichtet, wie sich das Handwerk verändert, wenn ein Team sowohl das Modellverhalten als auch das Erlebnis der Nutzenden gestaltet."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/designing-between-two-intelligences",
+      "tags": [
+        "Leadership"
+      ],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-22-lunch-break-group-b",
+      "day": "2026-10-22",
+      "start": "12:00",
+      "end": "13:45",
+      "endEstimated": true,
+      "title": "Mittagspause · Gruppe B",
+      "type": "Pause",
+      "room": "Alte Kongresshalle",
+      "speakers": [],
+      "tldr": "Mittagessen für Gruppe B: vor dem Breakout um 13:45 Uhr.",
+      "description": [
+        "Buffet, Ausstellung und Networking laufen parallel zum Breakout der jeweils anderen Gruppe. Die Gruppe richtet sich nach deiner offiziellen Breakout-Buchung. Roundtables sind eigene Einträge in der Agenda."
+      ],
+      "sourceUrl": "https://push-conference.com/program#thu-22-oct",
+      "tags": [],
+      "bookingRequired": false,
+      "group": "B"
+    },
+    {
+      "id": "2026-10-22-ux-research-reframed",
+      "day": "2026-10-22",
+      "start": "12:15",
+      "end": "13:30",
+      "endEstimated": true,
+      "title": "UX Research, Reframed",
+      "type": "Lightning Talks",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Pamela Zotz",
+          "role": "Staff UX Researcher",
+          "company": "Celonis",
+          "bio": "Pamela Zotz · Staff UX Researcher · Celonis",
+          "image": "https://push-conference.com/assets/pamela-zotz-DPxJP1VA.png"
+        },
+        {
+          "name": "Valerie Burgahn",
+          "role": "Senior UX Researcher",
+          "company": "Celonis",
+          "bio": "Valerie Burgahn · Senior UX Researcher · Celonis",
+          "image": "https://push-conference.com/assets/valerie-burgahn-D5cNEVDB.png"
+        },
+        {
+          "name": "Maria Müller",
+          "role": "Staff UX Researcher",
+          "company": "kleinanzeigen.de",
+          "bio": "Maria Müller · Staff UX Researcher · kleinanzeigen.de",
+          "image": "https://push-conference.com/__l5e/assets-v1/e6d8f786-2f3c-4d71-b479-976cac55dc68/maria-mueller.png"
+        },
+        {
+          "name": "Philipp Rosenbaum",
+          "role": "Senior UX Researcher",
+          "company": "Eurowings Digital",
+          "bio": "Philipp Rosenbaum · Senior UX Researcher · Eurowings Digital",
+          "image": "https://push-conference.com/__l5e/assets-v1/634f4d95-8d00-4753-bdab-12dffe39da81/philipp-rosenbaum.png"
+        }
+      ],
+      "tldr": "Mehrere kompakte Vorträge zum Thema UX Research, Reframed. Eine Alternative zu den parallelen Breakouts.",
+      "description": [
+        "Making the User Heard When Everyone Has Agents: UXR Ops for Trust and Scale in B2B: Research so strukturieren, dass Menschen und KI-Agenten verlässlich damit arbeiten können.",
+        "Das Celonis-Team zeigt, wie Research Operations mit schnellerer Produktentwicklung Schritt halten können. Im Mittelpunkt stehen zugänglicher Nutzungskontext, Vertrauen in Erkenntnisse und klare Entscheidungen darüber, wo Automatisierung hilft und wo Menschen beteiligt bleiben müssen.",
+        "Research Doesn't Change Roadmaps. Collaboration Does.: Wie Research durch kontinuierliche Zusammenarbeit tatsächlich Produktentscheidungen beeinflusst.",
+        "Anhand der neuen Kleinanzeigen-Startseite zeigt Maria Müller, wie fortlaufende UX-Kennzahlen, regelmäßiges Feedback und früh eingebundene Entscheider aus einzelnen Studien wirksame Evidenz machen. Der Fokus liegt auf Zusammenarbeit und Akzeptanz im Produktteam.",
+        "A New Passenger Is Boarding: How AI Is Changing Travel Planning: Was KI-gestützte Reiseplanung für Nutzerverhalten und Research verändert.",
+        "Eurowings Digital und TestingTime betrachten Reiseentscheidungen, die zunehmend in Gesprächen mit generativer KI stattfinden. Philipp Rosenbaum erläutert, wie sich Befragungen, Verhaltensdaten und Gesprächsdaten kombinieren lassen, um veränderte Erwartungen besser zu verstehen."
+      ],
+      "sourceUrl": "https://push-conference.com/program#thu-22-oct",
+      "tags": [
+        "KI & Design",
+        "Research",
+        "Leadership",
+        "Product & Craft"
+      ],
+      "bookingRequired": true,
+      "group": "A"
+    },
+    {
+      "id": "2026-10-22-designing-an-ai-native-design-organization",
+      "day": "2026-10-22",
+      "start": "12:15",
+      "end": "13:30",
+      "endEstimated": true,
+      "title": "Designing an AI-Native Design Organization",
+      "type": "Breakout",
+      "room": "Room 1",
+      "speakers": [
+        {
+          "name": "Devin Harold",
+          "role": "Director",
+          "company": "Byte by Yum!",
+          "bio": "Devin Harold · Director · Byte by Yum!",
+          "image": "https://push-conference.com/assets/devin-harold-DLt0EdxO.png"
+        }
+      ],
+      "tldr": "KI nicht nur als Tool einführen, sondern die Arbeitsweise der Designorganisation neu gestalten.",
+      "description": [
+        "Devin Harold berichtet, wie sein Team KI in Research, Kritik, Dokumentation und Entscheidungen eingebunden hat. Die Session untersucht organisatorische Veränderungen, schwierige Führungsentscheidungen und die Frage, wie frei werdende Kapazität in anspruchsvollere Designarbeit fließt."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/designing-an-ai-native-design-organization",
+      "tags": [
+        "Hands-on",
+        "KI & Design",
+        "Research",
+        "Leadership"
+      ],
+      "bookingRequired": true,
+      "group": "A"
+    },
+    {
+      "id": "2026-10-22-how-you-show-up-a-practical-framework-for-leading-through-uncertainty",
+      "day": "2026-10-22",
+      "start": "12:15",
+      "end": "13:30",
+      "endEstimated": true,
+      "title": "How You Show Up: A Practical Framework for Leading Through Uncertainty",
+      "type": "Breakout",
+      "room": "Room 2",
+      "speakers": [
+        {
+          "name": "Reem Alwahabi",
+          "role": "Director of Product Design",
+          "company": "DeepL",
+          "bio": "Reem Alwahabi · Director of Product Design · DeepL",
+          "image": "https://push-conference.com/__l5e/assets-v1/0ac2ec7c-b744-4b86-8516-124d49303488/reem-alwahabi.png"
+        },
+        {
+          "name": "Matheus Mari",
+          "role": "Product Design Manager",
+          "company": "DeepL",
+          "bio": "Matheus Mari · Product Design Manager · DeepL",
+          "image": "https://push-conference.com/__l5e/assets-v1/492c962b-49da-4af6-ab14-637e1c3463fc/matheus-mari.png"
+        }
+      ],
+      "tldr": "Ein persönliches Framework für Kommunikation und Führung in unsicheren Situationen entwickeln.",
+      "description": [
+        "Live-Abstimmungen, Gruppengespräche und Übungen machen reale Arbeitssituationen greifbar. Reem Alwahabi und Matheus Mari helfen dir, das eigene Verhalten unter Druck zu reflektieren und bewusster mit schwierigen Gesprächen und Entscheidungen umzugehen."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/how-you-show-up-a-practical-framework-for-leading-through-uncertainty",
+      "tags": [
+        "Hands-on"
+      ],
+      "bookingRequired": true,
+      "group": "A"
+    },
+    {
+      "id": "2026-10-22-how-design-is-automated-at-n8n",
+      "day": "2026-10-22",
+      "start": "12:15",
+      "end": "13:30",
+      "endEstimated": true,
+      "title": "How Design Is Automated at an AI Automation Company",
+      "type": "Breakout",
+      "room": "Room 3",
+      "speakers": [
+        {
+          "name": "Jake Ranallo",
+          "role": "Senior Product Designer",
+          "company": "n8n",
+          "bio": "Jake Ranallo · Senior Product Designer · n8n",
+          "image": "https://push-conference.com/assets/jake-ranallo-CtZJuf4-.png"
+        }
+      ],
+      "tldr": "Erkennen, welche Designaufgaben sich automatisieren lassen und wo dein Urteil gefragt bleibt.",
+      "description": [
+        "Jake Ranallo teilt Erfahrungen aus n8n: von der Suche nach ineffizienten Prozessschritten bis zu praktischen Automatisierungen. Geschmack, Empathie und die Verantwortung für Nutzende bilden dabei die Grenze und den Maßstab für sinnvolle Entlastung."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/how-design-is-automated-at-n8n",
+      "tags": [
+        "Hands-on",
+        "KI & Design"
+      ],
+      "bookingRequired": true,
+      "group": "A"
+    },
+    {
+      "id": "2026-10-22-fine-to-on-brand-coaching-teams-to-direct-ai",
+      "day": "2026-10-22",
+      "start": "12:15",
+      "end": "13:30",
+      "endEstimated": true,
+      "title": "From “Fine” to On-Brand: Coaching Your Team to Direct AI",
+      "type": "Breakout",
+      "room": "Room 4",
+      "speakers": [
+        {
+          "name": "Whitney Lacey",
+          "role": "Head of Content Design",
+          "company": "Expedia Group",
+          "bio": "Whitney Lacey · Head of Content Design · Expedia Group",
+          "image": "https://push-conference.com/assets/whitney-lacey-BA1Cy5gy.png"
+        }
+      ],
+      "tldr": "KI-Content gezielt führen: ein Briefing-, Bewertungs- und Coachingprozess für Teams.",
+      "description": [
+        "Whitney Lacey führt durch eine praktische Fallstudie und einen vierteiligen Ablauf aus Definition, Anleitung, Bewertung und Verbesserung. Du übst, Qualität einzuordnen und Teams besser anzuleiten. Bitte eigenen Laptop und Zugang zu Claude mitbringen."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/fine-to-on-brand-coaching-teams-to-direct-ai",
+      "tags": [
+        "Hands-on",
+        "KI & Design",
+        "Leadership"
+      ],
+      "bookingRequired": true,
+      "group": "A"
+    },
+    {
+      "id": "2026-10-22-mastering-stakeholder-dynamics-in-complex-b2b-environments",
+      "day": "2026-10-22",
+      "start": "12:15",
+      "end": "13:30",
+      "endEstimated": true,
+      "title": "Mastering Stakeholder Dynamics in Complex B2B Environments",
+      "type": "Breakout",
+      "room": "Room 5",
+      "speakers": [
+        {
+          "name": "Maria Teresa Stella",
+          "role": "Senior UX Designer",
+          "company": "Allitude",
+          "bio": "Maria Teresa Stella · Senior UX Designer · Allitude",
+          "image": "https://push-conference.com/assets/maria-teresa-stella-BDvVmaYP.png"
+        }
+      ],
+      "tldr": "Schwierige Stakeholder-Situationen in B2B-Projekten gemeinsam durchspielen.",
+      "description": [
+        "Eine moderierte Gruppenübung stellt ein realistisches Konfliktszenario in den Mittelpunkt. Du erarbeitest Strategien für die Vorbereitung, das Gespräch selbst und die Nachbereitung. Die Session richtet sich besonders an Designer in komplexen Organisationen und Umgebungen mit geringer UX-Reife."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/mastering-stakeholder-dynamics-in-complex-b2b-environments",
+      "tags": [
+        "Hands-on",
+        "Leadership"
+      ],
+      "bookingRequired": true,
+      "group": "A"
+    },
+    {
+      "id": "2026-10-22-creating-a-roadmap-to-navigate-ai-change",
+      "day": "2026-10-22",
+      "start": "12:15",
+      "end": "13:30",
+      "endEstimated": true,
+      "title": "Creating a Roadmap to Navigate AI Change",
+      "type": "Breakout",
+      "room": "Room 6",
+      "speakers": [
+        {
+          "name": "Angela Pesta",
+          "role": "Chief Design Officer",
+          "company": "bsport",
+          "bio": "Angela Pesta · Chief Design Officer · bsport",
+          "image": "https://push-conference.com/assets/angela-pesta-D4ugvU6L.png"
+        }
+      ],
+      "tldr": "Change Management auf die eigene UX-Praxis und die KI-Transformation übertragen.",
+      "description": [
+        "Angela Pesta verbindet organisatorischen Wandel mit Designarbeit. Interaktive Übungen helfen bei neuen Rollen, Kompetenzen und Vereinbarungen zwischen Disziplinen. Die Werkzeuge lassen sich an Unternehmensgröße, Branche und UX-Reife anpassen."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/creating-a-roadmap-to-navigate-ai-change",
+      "tags": [
+        "Hands-on",
+        "KI & Design"
+      ],
+      "bookingRequired": true,
+      "group": "A"
+    },
+    {
+      "id": "2026-10-22-roundtable-1245-1",
+      "day": "2026-10-22",
+      "start": "12:45",
+      "end": "13:15",
+      "endEstimated": false,
+      "title": "What Makes Exceptional UX Different from Good UX?",
+      "type": "Roundtable",
+      "room": "Roundtable · Tisch 1",
+      "group": "B",
+      "speakers": [
+        {
+          "name": "Christoph Ortmann",
+          "role": "Design & Business Strategy Consultant",
+          "company": "CaderaDesign",
+          "bio": "Christoph Ortmann · Design & Business Strategy Consultant · CaderaDesign",
+          "image": "https://push-conference.com/__l5e/assets-v1/cf9d3e08-6811-4331-a81b-90955c901ac9/christoph-ortmann.png"
+        }
+      ],
+      "tldr": "Was unterscheidet außergewöhnliche UX von guter UX?",
+      "description": [
+        "Moderierter Austausch mit bis zu zehn Personen, ohne Folien und ohne Aufzeichnung. Jede Runde dauert 30 Minuten.",
+        "Morgens am Info Point anmelden. Spontanes Dazukommen ist möglich, wenn zum Start noch Plätze frei sind."
+      ],
+      "sourceUrl": "https://push-conference.com/program/roundtable-discussions",
+      "tags": [
+        "Austausch"
+      ],
+      "bookingRequired": true
+    },
+    {
+      "id": "2026-10-22-roundtable-1245-2",
+      "day": "2026-10-22",
+      "start": "12:45",
+      "end": "13:15",
+      "endEstimated": false,
+      "title": "Redefining the Role of the Design Leader",
+      "type": "Roundtable",
+      "room": "Roundtable · Tisch 2",
+      "group": "B",
+      "speakers": [
+        {
+          "name": "Stan Reimgen",
+          "role": "Sr. Design Lead",
+          "company": "Qonto",
+          "bio": "Stan Reimgen · Sr. Design Lead · Qonto",
+          "image": "https://push-conference.com/__l5e/assets-v1/03fce461-cd05-4cbf-94e7-081444fab17a/stan-reimgen.png"
+        }
+      ],
+      "tldr": "Wie verändert sich die Rolle von Design Leadership?",
+      "description": [
+        "Moderierter Austausch mit bis zu zehn Personen, ohne Folien und ohne Aufzeichnung. Jede Runde dauert 30 Minuten.",
+        "Morgens am Info Point anmelden. Spontanes Dazukommen ist möglich, wenn zum Start noch Plätze frei sind."
+      ],
+      "sourceUrl": "https://push-conference.com/program/roundtable-discussions",
+      "tags": [
+        "Austausch"
+      ],
+      "bookingRequired": true
+    },
+    {
+      "id": "2026-10-22-lunch-break-group-a",
+      "day": "2026-10-22",
+      "start": "13:30",
+      "end": "15:00",
+      "endEstimated": true,
+      "title": "Mittagspause · Gruppe A",
+      "type": "Pause",
+      "room": "Alte Kongresshalle",
+      "speakers": [],
+      "tldr": "Mittagessen für Gruppe A: nach dem Breakout um 12:15 Uhr.",
+      "description": [
+        "Buffet, Ausstellung und Networking laufen parallel zum Breakout der jeweils anderen Gruppe. Die Gruppe richtet sich nach deiner offiziellen Breakout-Buchung. Roundtables sind eigene Einträge in der Agenda."
+      ],
+      "sourceUrl": "https://push-conference.com/program#thu-22-oct",
+      "tags": [],
+      "bookingRequired": false,
+      "group": "A"
+    },
+    {
+      "id": "2026-10-22-the-human-advantage-in-an-ai-world",
+      "day": "2026-10-22",
+      "start": "13:45",
+      "end": "15:00",
+      "endEstimated": true,
+      "title": "The Human Advantage (In An AI World)",
+      "type": "Lightning Talks",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Jens Rusitschka",
+          "role": "AI-First Product & UX Consultant",
+          "company": "kick & boost",
+          "bio": "Jens Rusitschka · AI-First Product & UX Consultant · kick & boost",
+          "image": "https://push-conference.com/assets/jens-rusitschka-Br-c7PDC.png"
+        },
+        {
+          "name": "Jason Giles",
+          "role": "VP Customer Intelligence",
+          "company": "UserTesting",
+          "bio": "Jason Giles · VP Customer Intelligence · UserTesting",
+          "image": "https://push-conference.com/assets/jason-giles-Bg6x4Qj1.png"
+        }
+      ],
+      "tldr": "Mehrere kompakte Vorträge zum Thema The Human Advantage (In An AI World). Eine Alternative zu den parallelen Breakouts.",
+      "description": [
+        "Build the Prototyping Environment, Not the Screens: Ein gutes Prototyping-System bauen, damit auch andere bessere Ideen testen können.",
+        "Jens Rusitschka stellt einen Ansatz aus drei Ebenen vor: Ideen kritisch prüfen, schnell validieren und bestätigte Abläufe mit echten Design-Tokens und Markensprache umsetzen. Designteams gestalten dafür Wissen und Rahmenbedingungen statt jeden einzelnen Screen.",
+        "The Navigator Doesn't Get Out of the Car: Welche Verantwortung UX auch bei schneller KI-Automatisierung selbst tragen muss.",
+        "Jason Giles betrachtet UX als Orientierungsaufgabe: Richtung festlegen, Kontext verstehen und verantwortliche Entscheidungen treffen. Ein praktisches Framework unterstützt die Abwägung, welche Aufgaben delegiert werden können und welche menschliche Führung benötigen."
+      ],
+      "sourceUrl": "https://push-conference.com/program#thu-22-oct",
+      "tags": [
+        "KI & Design",
+        "Leadership"
+      ],
+      "bookingRequired": true,
+      "group": "B"
+    },
+    {
+      "id": "2026-10-22-beyond-specialisation-what-becomes-your-superpower-when-ai-handles-execution",
+      "day": "2026-10-22",
+      "start": "13:45",
+      "end": "15:00",
+      "endEstimated": true,
+      "title": "Beyond Specialisation: What Becomes Your Superpower When AI Handles Execution?",
+      "type": "Breakout",
+      "room": "Room 1",
+      "speakers": [
+        {
+          "name": "Judith Chromik",
+          "role": "Lead Manager & Researcher",
+          "company": "Kaiser X Labs",
+          "bio": "Judith Chromik · Lead Manager & Researcher · Kaiser X Labs",
+          "image": "https://push-conference.com/assets/judith-chromik-D2TyiiJK.png"
+        },
+        {
+          "name": "Dr. Antonia Conti-Kufner",
+          "role": "Lead UX Researcher",
+          "company": "Kaiser X Labs",
+          "bio": "Dr. Antonia Conti-Kufner · Lead UX Researcher · Kaiser X Labs",
+          "image": "https://push-conference.com/assets/antonia-conti-kufner-BDyVXFkd.png"
+        }
+      ],
+      "tldr": "Die eigene Stärke jenseits spezialisierter Ausführungsaufgaben entdecken.",
+      "description": [
+        "Judith Chromik und Antonia Conti-Kufner untersuchen mit dir, welche Tätigkeiten KI übernehmen kann und wo dein ganzheitliches Urteil wertvoller wird. Austausch und Feedback helfen, persönliche Entwicklungsmöglichkeiten über die aktuelle Spezialisierung hinaus zu erkennen."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/beyond-specialisation-what-becomes-your-superpower-when-ai-handles-execution",
+      "tags": [
+        "Hands-on",
+        "KI & Design"
+      ],
+      "bookingRequired": true,
+      "group": "B"
+    },
+    {
+      "id": "2026-10-22-designshifters",
+      "day": "2026-10-22",
+      "start": "13:45",
+      "end": "15:00",
+      "endEstimated": true,
+      "title": "DesignShifters: Archetypes for a World in Transition",
+      "type": "Breakout",
+      "room": "Room 2",
+      "speakers": [
+        {
+          "name": "Ida Persson",
+          "role": "Social Impact Designer",
+          "company": "Independent",
+          "bio": "Ida Persson · Social Impact Designer · Independent",
+          "image": "https://push-conference.com/assets/ida-persson-BSpK9wRj.png"
+        }
+      ],
+      "tldr": "Zehn Design-Archetypen als neue Perspektive auf die eigene gesellschaftliche Rolle.",
+      "description": [
+        "Ida Persson verbindet individuelle Reflexion mit Gruppendialog und praktischen Übungen. Du erkundest, welche Rolle Gestaltung angesichts gesellschaftlicher und ökologischer Herausforderungen übernehmen kann. Es sind keine Materialien nötig; die Session steht allen Erfahrungsstufen offen."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/designshifters",
+      "tags": [
+        "Hands-on"
+      ],
+      "bookingRequired": true,
+      "group": "B"
+    },
+    {
+      "id": "2026-10-22-leadium-agenda-setting-in-enterprise-ux",
+      "day": "2026-10-22",
+      "start": "13:45",
+      "end": "15:00",
+      "endEstimated": true,
+      "title": "Agenda Setting in Enterprise UX",
+      "type": "Breakout",
+      "room": "Room 3",
+      "speakers": [
+        {
+          "name": "Oliver Dürr",
+          "role": "Interim UX Consultant",
+          "company": "Leadium",
+          "bio": "Oliver Dürr · Interim UX Consultant · Leadium",
+          "image": "https://push-conference.com/assets/oliver-duerr-B7qZBUBY.png"
+        },
+        {
+          "name": "Peer Langermann",
+          "role": "UX Manager",
+          "company": "Leadium",
+          "bio": "Peer Langermann · UX Manager · Leadium",
+          "image": "https://push-conference.com/assets/peer-langermann-DHf63FTx.png"
+        }
+      ],
+      "tldr": "In komplexen Unternehmen Ansatzpunkte für wirksame UX-Veränderungen finden.",
+      "description": [
+        "Oliver Dürr und Peer Langermann moderieren den Austausch über organisatorische Dynamik und Veränderung. Eigene Erfahrungen und Ideen bilden die Grundlage, um Handlungsmöglichkeiten für UX in großen Produktorganisationen zu besprechen."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/leadium-agenda-setting-in-enterprise-ux",
+      "tags": [
+        "Hands-on",
+        "Leadership",
+        "Product & Craft"
+      ],
+      "bookingRequired": true,
+      "group": "B"
+    },
+    {
+      "id": "2026-10-22-ai-beyond-vibe-coding-workflows-for-design-and-product-makers",
+      "day": "2026-10-22",
+      "start": "13:45",
+      "end": "15:00",
+      "endEstimated": true,
+      "title": "AI Beyond Vibe Coding: Workflows for Design & Product Makers",
+      "type": "Breakout",
+      "room": "Room 4",
+      "speakers": [
+        {
+          "name": "Daniel Liss",
+          "role": "Product Design Manager",
+          "company": "Delivery Hero",
+          "bio": "Daniel Liss · Product Design Manager · Delivery Hero",
+          "image": "https://push-conference.com/assets/dan-liss-DB_0ErvL.png"
+        }
+      ],
+      "tldr": "KI über Einzelprompts hinaus zu einem verbundenen Produkt-Workflow machen.",
+      "description": [
+        "Daniel Liss zeigt fortgeschrittene Techniken am Beispiel einer gebrandeten Web-Präsentation und erläutert Veröffentlichung und Versionsverwaltung. Mitbringen: Laptop, Claude- oder GPT-Abo sowie kostenlose Konten bei GitHub und Vercel."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/ai-beyond-vibe-coding-workflows-for-design-and-product-makers",
+      "tags": [
+        "Hands-on",
+        "KI & Design",
+        "Product & Craft"
+      ],
+      "bookingRequired": true,
+      "group": "B"
+    },
+    {
+      "id": "2026-10-22-designing-without-the-user-in-the-room-a-b2b-reality-check",
+      "day": "2026-10-22",
+      "start": "13:45",
+      "end": "15:00",
+      "endEstimated": true,
+      "title": "Designing Without the User in the Room: A B2B Reality Check",
+      "type": "Breakout",
+      "room": "Room 5",
+      "speakers": [
+        {
+          "name": "Eileen Einwächter",
+          "role": "Senior Product Designer",
+          "company": "Tanso",
+          "bio": "Eileen Einwächter · Senior Product Designer · Tanso",
+          "image": "https://push-conference.com/assets/eileen-einwaechter-DUiUEywK.png"
+        },
+        {
+          "name": "Lara Frölich",
+          "role": "Product Designer",
+          "company": "Tanso",
+          "bio": "Lara Frölich · Product Designer · Tanso",
+          "image": "https://push-conference.com/assets/lara-froelich-DB2WrYqI.png"
+        }
+      ],
+      "tldr": "Bessere B2B-Entscheidungen treffen, wenn direkter Zugang zu Nutzenden fehlt.",
+      "description": [
+        "Lara Frölich und Eileen Einwächter arbeiten mit Signalen aus Support, Vertrieb, Onboarding und Produktdaten. Gemeinsam hinterfragt ihr Annahmen und teilt Erfahrungen. Bringe eine konkrete Designentscheidung mit, bei der dir unmittelbares Nutzerfeedback gefehlt hat."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/designing-without-the-user-in-the-room-a-b2b-reality-check",
+      "tags": [
+        "Hands-on",
+        "Product & Craft"
+      ],
+      "bookingRequired": true,
+      "group": "B"
+    },
+    {
+      "id": "2026-10-22-building-an-international-product",
+      "day": "2026-10-22",
+      "start": "13:45",
+      "end": "15:00",
+      "endEstimated": true,
+      "title": "Building an International Product",
+      "type": "Breakout",
+      "room": "Room 6",
+      "speakers": [
+        {
+          "name": "André Schönmaier",
+          "role": "Team Manager UX/UI",
+          "company": "FERCHAU Automotive",
+          "bio": "André Schönmaier · Team Manager UX/UI · FERCHAU Automotive",
+          "image": "https://push-conference.com/__l5e/assets-v1/9b175887-d80c-4ae0-8ce9-f7e7fd159180/andre-schoenmaier.png"
+        }
+      ],
+      "tldr": "Schritte und Ressourcen für ein international erfolgreiches Produkt diskutieren.",
+      "description": [
+        "André Schönmaier bringt Impulse ein; im Mittelpunkt stehen deine Fragen und der Austausch der Gruppe. Die Session richtet sich an alle, die internationale digitale Produkte entwickeln oder sich dafür interessieren."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/building-an-international-product",
+      "tags": [
+        "Hands-on",
+        "Product & Craft"
+      ],
+      "bookingRequired": true,
+      "group": "B"
+    },
+    {
+      "id": "2026-10-22-roundtable-1400-1",
+      "day": "2026-10-22",
+      "start": "14:00",
+      "end": "14:30",
+      "endEstimated": false,
+      "title": "Artificial Expectations: How Is AI Influencing Design Projects and Shifting What Stakeholders Expect?",
+      "type": "Roundtable",
+      "room": "Roundtable · Tisch 1",
+      "group": "A",
+      "speakers": [
+        {
+          "name": "Dennis Knopf",
+          "role": "Director of Product",
+          "company": "zigzag",
+          "bio": "Dennis Knopf · Director of Product · zigzag",
+          "image": "https://push-conference.com/__l5e/assets-v1/635c25e3-d0f3-4e9c-95de-6618b54cca46/dennis-knopf.png"
+        }
+      ],
+      "tldr": "Wie verändert KI die Erwartungen von Stakeholdern an Designprojekte?",
+      "description": [
+        "Moderierter Austausch mit bis zu zehn Personen, ohne Folien und ohne Aufzeichnung. Jede Runde dauert 30 Minuten.",
+        "Morgens am Info Point anmelden. Spontanes Dazukommen ist möglich, wenn zum Start noch Plätze frei sind."
+      ],
+      "sourceUrl": "https://push-conference.com/program/roundtable-discussions",
+      "tags": [
+        "Austausch"
+      ],
+      "bookingRequired": true
+    },
+    {
+      "id": "2026-10-22-roundtable-1400-2",
+      "day": "2026-10-22",
+      "start": "14:00",
+      "end": "14:30",
+      "endEstimated": false,
+      "title": "Decision-Making for AI-Driven Products",
+      "type": "Roundtable",
+      "room": "Roundtable · Tisch 2",
+      "group": "A",
+      "speakers": [
+        {
+          "name": "Christiane Moser",
+          "role": "UX Consultant",
+          "company": "CUXpro",
+          "bio": "Christiane Moser · UX Consultant · CUXpro",
+          "image": "https://push-conference.com/__l5e/assets-v1/1de77f53-390c-4f67-84a3-f9ca9a4a3002/christiane-moser.png"
+        }
+      ],
+      "tldr": "Gemeinsam über Entscheidungen für KI-Produkte diskutieren.",
+      "description": [
+        "Moderierter Austausch mit bis zu zehn Personen, ohne Folien und ohne Aufzeichnung. Jede Runde dauert 30 Minuten.",
+        "Morgens am Info Point anmelden. Spontanes Dazukommen ist möglich, wenn zum Start noch Plätze frei sind."
+      ],
+      "sourceUrl": "https://push-conference.com/program/roundtable-discussions",
+      "tags": [
+        "Austausch"
+      ],
+      "bookingRequired": true
+    },
+    {
+      "id": "2026-10-22-discovery-slop",
+      "day": "2026-10-22",
+      "start": "15:00",
+      "end": "15:30",
+      "endEstimated": true,
+      "title": "Discovery Slop — the Research That Looks Shiny but Is Sh*tty",
+      "type": "Keynote",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Julia Bastian",
+          "role": "Product Lead AI",
+          "company": "Alasco",
+          "bio": "Julia Bastian · Product Lead AI · Alasco",
+          "image": "https://push-conference.com/assets/julia-bastian-D4xrhdsi.png"
+        }
+      ],
+      "tldr": "Glänzende KI-Ergebnisse von belastbarer Discovery unterscheiden.",
+      "description": [
+        "Julia Bastian hinterfragt, wann schnelle Zusammenfassungen echtes Denken verdrängen. Es geht darum, Widersprüche zu erkennen, Komplexität auszuhalten und Erkenntnisse selbst zu verbinden, statt überzeugend aussehende Ergebnisse ungeprüft zu übernehmen."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/discovery-slop",
+      "tags": [
+        "Research"
+      ],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-22-rebuilding-user-research",
+      "day": "2026-10-22",
+      "start": "15:30",
+      "end": "16:00",
+      "endEstimated": true,
+      "title": "The Evolution of Product Development and What it Means for Researchers",
+      "type": "Keynote",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Dalia El-Shimy",
+          "role": "Director of UX Research",
+          "company": "Wise",
+          "bio": "Dalia El-Shimy · Director of UX Research · Wise",
+          "image": "https://push-conference.com/assets/dalia-el-shimy-BSinthxw.png"
+        }
+      ],
+      "tldr": "Wie KI-Prototyping den Produktprozess verändert und Research neu positioniert.",
+      "description": [
+        "Dalia El-Shimy betrachtet die Veränderungen über einzelne schnellere Research-Aufgaben hinaus. Sie stellt ein Modell der Produktentwicklung vor und untersucht, was es für die Zusammenarbeit von Research, Design und Engineering bedeutet."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/rebuilding-user-research",
+      "tags": [
+        "Research",
+        "Product & Craft"
+      ],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-22-coffee-break",
+      "day": "2026-10-22",
+      "start": "16:00",
+      "end": "16:30",
+      "endEstimated": true,
+      "title": "Kaffeepause",
+      "type": "Pause",
+      "room": "Alte Kongresshalle",
+      "speakers": [],
+      "tldr": "Zeit für Kaffee, Kuchen und Gespräche.",
+      "description": [
+        "Nutze die halbe Stunde zum Durchatmen, für die Ausstellung oder zum Austausch mit anderen Gästen."
+      ],
+      "sourceUrl": "https://push-conference.com/program#thu-22-oct",
+      "tags": [],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-22-redefining-good-evolution-of-content-design-in-an-ai-era",
+      "day": "2026-10-22",
+      "start": "16:30",
+      "end": "17:00",
+      "endEstimated": true,
+      "title": "Redefining Good: The Evolution of Content Design in an AI Era",
+      "type": "Keynote",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Whitney Lacey",
+          "role": "Head of Content Design",
+          "company": "Expedia Group",
+          "bio": "Whitney Lacey · Head of Content Design · Expedia Group",
+          "image": "https://push-conference.com/assets/whitney-lacey-BA1Cy5gy.png"
+        }
+      ],
+      "tldr": "Die Rolle von Content Design neu bestimmen, wenn KI die Worte bereits liefern kann.",
+      "description": [
+        "Whitney Lacey berichtet über die fachliche und emotionale Veränderung ihres Teams. Aus der Prüfung fertiger Texte wurde eine frühere Zusammenarbeit mit Engineering und ML: Inhalte, Qualitätsurteile und das Verhalten des zugrunde liegenden Systems gemeinsam gestalten."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/redefining-good-evolution-of-content-design-in-an-ai-era",
+      "tags": [
+        "KI & Design",
+        "Leadership"
+      ],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-22-dev-x-design-x-pm-a-trio-in-transition-morgane-peng",
+      "day": "2026-10-22",
+      "start": "17:00",
+      "end": "17:30",
+      "endEstimated": true,
+      "title": "Dev x Design x PM: A Trio in Transition",
+      "type": "Keynote",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Morgane Peng",
+          "role": "Managing Director, Product Design & AI Transformation",
+          "company": "Société Générale",
+          "bio": "Morgane Peng · Managing Director, Product Design & AI Transformation · Société Générale",
+          "image": "https://push-conference.com/__l5e/assets-v1/b8e82b53-0042-489a-9d02-0ccbf85d15f1/morgane-peng.png"
+        }
+      ],
+      "tldr": "Zusammenarbeit zwischen Design, Engineering und Product unter neuen Bedingungen verbessern.",
+      "description": [
+        "Morgane Peng spricht über Reibung an Rollengrenzen, knappe Budgets und beschleunigte Entwicklung. Konkrete Beispiele aus etablierten Organisationen zeigen, wie das Trio ohne unnötige Zuständigkeitskonflikte zusammenarbeiten kann."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/dev-x-design-x-pm-a-trio-in-transition-morgane-peng",
+      "tags": [
+        "Leadership"
+      ],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-22-enablement-over-automation-paulo-oliveira",
+      "day": "2026-10-22",
+      "start": "17:30",
+      "end": "18:00",
+      "endEstimated": true,
+      "title": "Enablement over Automation: Adopting AI Without Losing Craft and People",
+      "type": "Keynote",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Paulo Oliveira",
+          "role": "Global Innovation & Technology Manager",
+          "company": "IKEA",
+          "bio": "Paulo Oliveira · Global Innovation & Technology Manager · IKEA",
+          "image": "https://push-conference.com/__l5e/assets-v1/e4a9958b-75e1-4e1d-ba8a-2ead7d91d0cc/paulo-oliveira.png"
+        }
+      ],
+      "tldr": "KI an Menschen und bestehender Expertise ausrichten, statt nur Prozesse zu beschleunigen.",
+      "description": [
+        "Paulo Oliveira berichtet aus der Praxis von IKEA: welche Ansätze umgesetzt, welche verworfen wurden und wie sich früh erkennen lässt, was zur Organisation passt. Die Leitfrage ist, wie KI vorhandene Stärken dauerhaft unterstützt."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/enablement-over-automation-paulo-oliveira",
+      "tags": [
+        "KI & Design",
+        "Leadership",
+        "Product & Craft"
+      ],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-22-get-together-networking",
+      "day": "2026-10-22",
+      "start": "18:00",
+      "end": "20:00",
+      "endEstimated": false,
+      "title": "Get-together & Networking",
+      "type": "Networking",
+      "room": "Foyer",
+      "speakers": [],
+      "tldr": "Den ersten Tag mit Drinks und Gesprächen im Foyer ausklingen lassen.",
+      "description": [
+        "Der offizielle Ausklang findet im Foyer statt. Die Türen schließen um 20:00 Uhr."
+      ],
+      "sourceUrl": "https://push-conference.com/program#thu-22-oct",
+      "tags": [],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-23-push-peers-networking-breakfast",
+      "day": "2026-10-23",
+      "start": "09:00",
+      "end": "09:30",
+      "endEstimated": true,
+      "title": "PUSH Peers Networking Breakfast",
+      "type": "Networking",
+      "room": "Alte Kongresshalle",
+      "speakers": [],
+      "tldr": "Frühstück und neue Kontakte für angemeldete PUSH-Peers-Gäste.",
+      "description": [
+        "Die kostenlosen Plätze sind begrenzt. Die Anmeldung läuft über PUSH Peers; eine Markierung hier ersetzt sie nicht."
+      ],
+      "sourceUrl": "https://push-conference.com/program#fri-23-oct",
+      "tags": [],
+      "bookingRequired": true
+    },
+    {
+      "id": "2026-10-23-doors-open",
+      "day": "2026-10-23",
+      "start": "09:30",
+      "end": "10:00",
+      "endEstimated": true,
+      "title": "Einlass",
+      "type": "Organisation",
+      "room": "Alte Kongresshalle",
+      "speakers": [],
+      "tldr": "Ankommen und vor den ersten Talks entspannt Platz finden.",
+      "description": [
+        "Die Türen öffnen um 09:30 Uhr. Das Bühnenprogramm beginnt um 10:00 Uhr."
+      ],
+      "sourceUrl": "https://push-conference.com/program#fri-23-oct",
+      "tags": [],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-23-from-pixels-to-agentic-loops-anneke-rietzel",
+      "day": "2026-10-23",
+      "start": "10:00",
+      "end": "10:30",
+      "endEstimated": true,
+      "title": "Losing Control, Finding Craft: How to UX in a Non-Deterministic Future",
+      "type": "Keynote",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Anneke Rietzel",
+          "role": "Senior Staff UX Designer",
+          "company": "Google",
+          "bio": "Anneke Rietzel · Senior Staff UX Designer · Google",
+          "image": "https://push-conference.com/__l5e/assets-v1/253268e2-1740-48fd-9873-69184995e1d2/anneke-rietzel.png"
+        }
+      ],
+      "tldr": "UX für autonome Systeme: Verhalten beobachtbar und steuerbar machen.",
+      "description": [
+        "Anneke Rietzel untersucht den Übergang von gezeichneten Oberflächen zu Agenten, die mehrstufige Aufgaben im Hintergrund ausführen. Sie stellt ein Interaktionsmodell vor und überträgt es auf die nächste konkrete Designaufgabe."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/from-pixels-to-agentic-loops-anneke-rietzel",
+      "tags": [
+        "KI & Design",
+        "Product & Craft"
+      ],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-23-the-a-z-of-conversational-experiences",
+      "day": "2026-10-23",
+      "start": "10:30",
+      "end": "11:00",
+      "endEstimated": true,
+      "title": "The A–Z of Conversational Experiences",
+      "type": "Keynote",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Karen Kaushansky",
+          "role": "Conversational AI Lead",
+          "company": "Doctolib",
+          "bio": "Karen Kaushansky · Conversational AI Lead · Doctolib",
+          "image": "https://push-conference.com/assets/karen-kaushansky-BdBagGCH.png"
+        }
+      ],
+      "tldr": "Gespräche als Produkt gestalten, testen und an Marke und Nutzungssituation anpassen.",
+      "description": [
+        "Karen Kaushansky gibt einen Überblick über Conversational UX im Zeitalter generativer Sprachmodelle. Die Keynote behandelt Gesprächsqualität, Unterschiede zu klassischem Content Design und das Prototyping und Validieren von dialogbasierten Erlebnissen."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/the-a-z-of-conversational-experiences",
+      "tags": [],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-23-designing-for-calm",
+      "day": "2026-10-23",
+      "start": "11:00",
+      "end": "11:30",
+      "endEstimated": true,
+      "title": "Designing for Calm",
+      "type": "Keynote",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Paavan Buddhdev",
+          "role": "Product Designer",
+          "company": "Granola",
+          "bio": "Paavan Buddhdev · Product Designer · Granola",
+          "image": "https://push-conference.com/assets/paavan-buddhdev-BLO1xbaf.png"
+        }
+      ],
+      "tldr": "KI-Produkte gestalten, die Aufmerksamkeit schonen und Stress reduzieren.",
+      "description": [
+        "Paavan Buddhdev erklärt den Ansatz hinter Granola: Funktionen bei Bedarf verfügbar machen und die Oberfläche bewusst zurücknehmen. Er teilt praktische Gestaltungsprinzipien und zeigt, wann ein schneller funktionierender Prototyp hilfreicher ist als weitere Arbeit in Figma."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/designing-for-calm",
+      "tags": [],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-23-humanoid-centered-design-robotic-ux-2-0-sebastian-aumer",
+      "day": "2026-10-23",
+      "start": "11:30",
+      "end": "12:00",
+      "endEstimated": true,
+      "title": "Human(oid) Centered Design – Robotic UX 2.0",
+      "type": "Keynote",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Sebastian Aumer",
+          "role": "UX Designer",
+          "company": "Agile Robots",
+          "bio": "Sebastian Aumer · UX Designer · Agile Robots",
+          "image": "https://push-conference.com/__l5e/assets-v1/94d69bfd-8f76-4cb0-a069-8da81ca6c56b/sebastian-aumer.png"
+        }
+      ],
+      "tldr": "Was die Gestaltung humanoider Roboter für die UX-Praxis bedeutet.",
+      "description": [
+        "Sebastian Aumer stellt die UX-Entwicklung des Industrieroboters Agile ONE vor. Im Mittelpunkt stehen die Verbindung von Hardware und Software, heutige Herausforderungen und Fähigkeiten, die für künftige Robotik-Erlebnisse relevant werden."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/humanoid-centered-design-robotic-ux-2-0-sebastian-aumer",
+      "tags": [],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-23-lunch-break-group-b",
+      "day": "2026-10-23",
+      "start": "12:00",
+      "end": "13:45",
+      "endEstimated": true,
+      "title": "Mittagspause · Gruppe B",
+      "type": "Pause",
+      "room": "Alte Kongresshalle",
+      "speakers": [],
+      "tldr": "Mittagessen für Gruppe B: vor dem Breakout um 13:45 Uhr.",
+      "description": [
+        "Buffet, Ausstellung und Networking laufen parallel zum Breakout der jeweils anderen Gruppe. Die Gruppe richtet sich nach deiner offiziellen Breakout-Buchung. Roundtables sind eigene Einträge in der Agenda."
+      ],
+      "sourceUrl": "https://push-conference.com/program#fri-23-oct",
+      "tags": [],
+      "bookingRequired": false,
+      "group": "B"
+    },
+    {
+      "id": "2026-10-23-returning-to-craft",
+      "day": "2026-10-23",
+      "start": "12:15",
+      "end": "13:30",
+      "endEstimated": true,
+      "title": "Returning To Craft",
+      "type": "Lightning Talks",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Peter Gregersen",
+          "role": "Designer",
+          "company": "Vipps MobilePay",
+          "bio": "Peter Gregersen · Designer · Vipps MobilePay",
+          "image": "https://push-conference.com/__l5e/assets-v1/95d06529-617c-4df6-9ae8-03e25d3ebc10/peter-gregersen.png"
+        },
+        {
+          "name": "Andrea Ceccaroni",
+          "role": "Design Director",
+          "company": "frog",
+          "bio": "Andrea Ceccaroni · Design Director · frog",
+          "image": "https://push-conference.com/__l5e/assets-v1/0bb1b524-3248-4c4a-a2a8-2f38565417de/andrea-ceccaroni.png"
+        },
+        {
+          "name": "Kaveh Shirdel",
+          "role": "VP Head of Experience Design",
+          "company": "Renault Group",
+          "bio": "Kaveh Shirdel · VP Head of Experience Design · Renault Group",
+          "image": "https://push-conference.com/__l5e/assets-v1/2cb638b2-a461-4316-a44d-a73a7f95804a/kaveh-shirdel.png"
+        }
+      ],
+      "tldr": "Mehrere kompakte Vorträge zum Thema Returning To Craft. Eine Alternative zu den parallelen Breakouts.",
+      "description": [
+        "20 Years of Designing Money: Zwanzig Jahre Finanz-Interfaces: prägendes UI, kulturelle Gewohnheiten und Craft.",
+        "Peter Gregersen blickt auf die Entwicklung von frühen iPhone-Oberflächen bis zu vertrauten mobilen Bezahlgesten. Der Talk fragt, wie Finanzprodukte unverwechselbar bleiben, wenn sie von einer ganzen Bevölkerung genutzt werden.",
+        "Why We Fall in Love with Things: Wie Sorgfalt, Iteration und Emotion aus guten Produkten geliebte Dinge machen.",
+        "Andrea Ceccaroni verbindet Erfahrungen aus Industrie-, Digital- und Markendesign. An realen Projekten wie Gravitrax Micro zeigt er, wie Prototypen und beharrliches Weiterentwickeln zu emotional wirksamen Produkterlebnissen beitragen.",
+        "The Fourth Pillar of Design in the Automotive OEM: UX als eigenständige Säule des Automobildesigns verstehen.",
+        "Kaveh Shirdel beschreibt die Rolle von UX bei Fahrzeugarchitekturen und zukünftiger Mobilität. Dabei geht es unter anderem um KI-Plattformen, Betriebssysteme und autonome Fahrzeuge."
+      ],
+      "sourceUrl": "https://push-conference.com/program#fri-23-oct",
+      "tags": [
+        "KI & Design",
+        "Product & Craft"
+      ],
+      "bookingRequired": true,
+      "group": "A"
+    },
+    {
+      "id": "2026-10-23-beyond-specialisation-what-becomes-your-superpower-when-ai-handles-execution",
+      "day": "2026-10-23",
+      "start": "12:15",
+      "end": "13:30",
+      "endEstimated": true,
+      "title": "Beyond Specialisation: What Becomes Your Superpower When AI Handles Execution?",
+      "type": "Breakout",
+      "room": "Room 1",
+      "speakers": [
+        {
+          "name": "Judith Chromik",
+          "role": "Lead Manager & Researcher",
+          "company": "Kaiser X Labs",
+          "bio": "Judith Chromik · Lead Manager & Researcher · Kaiser X Labs",
+          "image": "https://push-conference.com/assets/judith-chromik-D2TyiiJK.png"
+        },
+        {
+          "name": "Dr. Antonia Conti-Kufner",
+          "role": "Lead UX Researcher",
+          "company": "Kaiser X Labs",
+          "bio": "Dr. Antonia Conti-Kufner · Lead UX Researcher · Kaiser X Labs",
+          "image": "https://push-conference.com/assets/antonia-conti-kufner-BDyVXFkd.png"
+        }
+      ],
+      "tldr": "Die eigene Stärke jenseits spezialisierter Ausführungsaufgaben entdecken.",
+      "description": [
+        "Judith Chromik und Antonia Conti-Kufner untersuchen mit dir, welche Tätigkeiten KI übernehmen kann und wo dein ganzheitliches Urteil wertvoller wird. Austausch und Feedback helfen, persönliche Entwicklungsmöglichkeiten über die aktuelle Spezialisierung hinaus zu erkennen."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/beyond-specialisation-what-becomes-your-superpower-when-ai-handles-execution",
+      "tags": [
+        "Hands-on",
+        "KI & Design"
+      ],
+      "bookingRequired": true,
+      "group": "A"
+    },
+    {
+      "id": "2026-10-23-designshifters",
+      "day": "2026-10-23",
+      "start": "12:15",
+      "end": "13:30",
+      "endEstimated": true,
+      "title": "DesignShifters: Archetypes for a World in Transition",
+      "type": "Breakout",
+      "room": "Room 2",
+      "speakers": [
+        {
+          "name": "Ida Persson",
+          "role": "Social Impact Designer",
+          "company": "Independent",
+          "bio": "Ida Persson · Social Impact Designer · Independent",
+          "image": "https://push-conference.com/assets/ida-persson-BSpK9wRj.png"
+        }
+      ],
+      "tldr": "Zehn Design-Archetypen als neue Perspektive auf die eigene gesellschaftliche Rolle.",
+      "description": [
+        "Ida Persson verbindet individuelle Reflexion mit Gruppendialog und praktischen Übungen. Du erkundest, welche Rolle Gestaltung angesichts gesellschaftlicher und ökologischer Herausforderungen übernehmen kann. Es sind keine Materialien nötig; die Session steht allen Erfahrungsstufen offen."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/designshifters",
+      "tags": [
+        "Hands-on"
+      ],
+      "bookingRequired": true,
+      "group": "A"
+    },
+    {
+      "id": "2026-10-23-leadium-agenda-setting-in-enterprise-ux",
+      "day": "2026-10-23",
+      "start": "12:15",
+      "end": "13:30",
+      "endEstimated": true,
+      "title": "Agenda Setting in Enterprise UX",
+      "type": "Breakout",
+      "room": "Room 3",
+      "speakers": [
+        {
+          "name": "Oliver Dürr",
+          "role": "Interim UX Consultant",
+          "company": "Leadium",
+          "bio": "Oliver Dürr · Interim UX Consultant · Leadium",
+          "image": "https://push-conference.com/assets/oliver-duerr-B7qZBUBY.png"
+        },
+        {
+          "name": "Peer Langermann",
+          "role": "UX Manager",
+          "company": "Leadium",
+          "bio": "Peer Langermann · UX Manager · Leadium",
+          "image": "https://push-conference.com/assets/peer-langermann-DHf63FTx.png"
+        }
+      ],
+      "tldr": "In komplexen Unternehmen Ansatzpunkte für wirksame UX-Veränderungen finden.",
+      "description": [
+        "Oliver Dürr und Peer Langermann moderieren den Austausch über organisatorische Dynamik und Veränderung. Eigene Erfahrungen und Ideen bilden die Grundlage, um Handlungsmöglichkeiten für UX in großen Produktorganisationen zu besprechen."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/leadium-agenda-setting-in-enterprise-ux",
+      "tags": [
+        "Hands-on",
+        "Leadership",
+        "Product & Craft"
+      ],
+      "bookingRequired": true,
+      "group": "A"
+    },
+    {
+      "id": "2026-10-23-ai-beyond-vibe-coding-workflows-for-design-and-product-makers",
+      "day": "2026-10-23",
+      "start": "12:15",
+      "end": "13:30",
+      "endEstimated": true,
+      "title": "AI Beyond Vibe Coding: Workflows for Design & Product Makers",
+      "type": "Breakout",
+      "room": "Room 4",
+      "speakers": [
+        {
+          "name": "Daniel Liss",
+          "role": "Product Design Manager",
+          "company": "Delivery Hero",
+          "bio": "Daniel Liss · Product Design Manager · Delivery Hero",
+          "image": "https://push-conference.com/assets/dan-liss-DB_0ErvL.png"
+        }
+      ],
+      "tldr": "KI über Einzelprompts hinaus zu einem verbundenen Produkt-Workflow machen.",
+      "description": [
+        "Daniel Liss zeigt fortgeschrittene Techniken am Beispiel einer gebrandeten Web-Präsentation und erläutert Veröffentlichung und Versionsverwaltung. Mitbringen: Laptop, Claude- oder GPT-Abo sowie kostenlose Konten bei GitHub und Vercel."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/ai-beyond-vibe-coding-workflows-for-design-and-product-makers",
+      "tags": [
+        "Hands-on",
+        "KI & Design",
+        "Product & Craft"
+      ],
+      "bookingRequired": true,
+      "group": "A"
+    },
+    {
+      "id": "2026-10-23-designing-without-the-user-in-the-room-a-b2b-reality-check",
+      "day": "2026-10-23",
+      "start": "12:15",
+      "end": "13:30",
+      "endEstimated": true,
+      "title": "Designing Without the User in the Room: A B2B Reality Check",
+      "type": "Breakout",
+      "room": "Room 5",
+      "speakers": [
+        {
+          "name": "Eileen Einwächter",
+          "role": "Senior Product Designer",
+          "company": "Tanso",
+          "bio": "Eileen Einwächter · Senior Product Designer · Tanso",
+          "image": "https://push-conference.com/assets/eileen-einwaechter-DUiUEywK.png"
+        },
+        {
+          "name": "Lara Frölich",
+          "role": "Product Designer",
+          "company": "Tanso",
+          "bio": "Lara Frölich · Product Designer · Tanso",
+          "image": "https://push-conference.com/assets/lara-froelich-DB2WrYqI.png"
+        }
+      ],
+      "tldr": "Bessere B2B-Entscheidungen treffen, wenn direkter Zugang zu Nutzenden fehlt.",
+      "description": [
+        "Lara Frölich und Eileen Einwächter arbeiten mit Signalen aus Support, Vertrieb, Onboarding und Produktdaten. Gemeinsam hinterfragt ihr Annahmen und teilt Erfahrungen. Bringe eine konkrete Designentscheidung mit, bei der dir unmittelbares Nutzerfeedback gefehlt hat."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/designing-without-the-user-in-the-room-a-b2b-reality-check",
+      "tags": [
+        "Hands-on",
+        "Product & Craft"
+      ],
+      "bookingRequired": true,
+      "group": "A"
+    },
+    {
+      "id": "2026-10-23-building-an-international-product",
+      "day": "2026-10-23",
+      "start": "12:15",
+      "end": "13:30",
+      "endEstimated": true,
+      "title": "Building an International Product",
+      "type": "Breakout",
+      "room": "Room 6",
+      "speakers": [
+        {
+          "name": "André Schönmaier",
+          "role": "Team Manager UX/UI",
+          "company": "FERCHAU Automotive",
+          "bio": "André Schönmaier · Team Manager UX/UI · FERCHAU Automotive",
+          "image": "https://push-conference.com/__l5e/assets-v1/9b175887-d80c-4ae0-8ce9-f7e7fd159180/andre-schoenmaier.png"
+        }
+      ],
+      "tldr": "Schritte und Ressourcen für ein international erfolgreiches Produkt diskutieren.",
+      "description": [
+        "André Schönmaier bringt Impulse ein; im Mittelpunkt stehen deine Fragen und der Austausch der Gruppe. Die Session richtet sich an alle, die internationale digitale Produkte entwickeln oder sich dafür interessieren."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/building-an-international-product",
+      "tags": [
+        "Hands-on",
+        "Product & Craft"
+      ],
+      "bookingRequired": true,
+      "group": "A"
+    },
+    {
+      "id": "2026-10-23-roundtable-1245-1",
+      "day": "2026-10-23",
+      "start": "12:45",
+      "end": "13:15",
+      "endEstimated": false,
+      "title": "What Should We Never Delegate to AI?",
+      "type": "Roundtable",
+      "room": "Roundtable · Tisch 1",
+      "group": "B",
+      "speakers": [
+        {
+          "name": "Jason Giles",
+          "role": "VP Customer Intelligence",
+          "company": "UserTesting",
+          "bio": "Jason Giles · VP Customer Intelligence · UserTesting",
+          "image": "https://push-conference.com/__l5e/assets-v1/772bdb93-e66b-44df-bc26-b14b15cc5c74/jason-giles.png"
+        }
+      ],
+      "tldr": "Welche Aufgaben und Entscheidungen sollten wir nie an KI abgeben?",
+      "description": [
+        "Moderierter Austausch mit bis zu zehn Personen, ohne Folien und ohne Aufzeichnung. Jede Runde dauert 30 Minuten.",
+        "Morgens am Info Point anmelden. Spontanes Dazukommen ist möglich, wenn zum Start noch Plätze frei sind."
+      ],
+      "sourceUrl": "https://push-conference.com/program/roundtable-discussions",
+      "tags": [
+        "Austausch"
+      ],
+      "bookingRequired": true
+    },
+    {
+      "id": "2026-10-23-roundtable-1245-2",
+      "day": "2026-10-23",
+      "start": "12:45",
+      "end": "13:15",
+      "endEstimated": false,
+      "title": "Originality in the Age of AI: How Taste, Craft, and Vision Set Products Apart.",
+      "type": "Roundtable",
+      "room": "Roundtable · Tisch 2",
+      "group": "B",
+      "speakers": [
+        {
+          "name": "Malvika Kasliwal",
+          "role": "Associate Manager",
+          "company": "Netlight",
+          "bio": "Malvika Kasliwal · Associate Manager · Netlight",
+          "image": "https://push-conference.com/__l5e/assets-v1/05cae56a-7b63-459e-a212-7a000c01a7c8/malvika-kasliwal.png"
+        }
+      ],
+      "tldr": "Wie Geschmack, Handwerk und Vision Produkte im KI-Zeitalter prägen.",
+      "description": [
+        "Moderierter Austausch mit bis zu zehn Personen, ohne Folien und ohne Aufzeichnung. Jede Runde dauert 30 Minuten.",
+        "Morgens am Info Point anmelden. Spontanes Dazukommen ist möglich, wenn zum Start noch Plätze frei sind."
+      ],
+      "sourceUrl": "https://push-conference.com/program/roundtable-discussions",
+      "tags": [
+        "Austausch"
+      ],
+      "bookingRequired": true
+    },
+    {
+      "id": "2026-10-23-lunch-break-group-a",
+      "day": "2026-10-23",
+      "start": "13:30",
+      "end": "15:00",
+      "endEstimated": true,
+      "title": "Mittagspause · Gruppe A",
+      "type": "Pause",
+      "room": "Alte Kongresshalle",
+      "speakers": [],
+      "tldr": "Mittagessen für Gruppe A: nach dem Breakout um 12:15 Uhr.",
+      "description": [
+        "Buffet, Ausstellung und Networking laufen parallel zum Breakout der jeweils anderen Gruppe. Die Gruppe richtet sich nach deiner offiziellen Breakout-Buchung. Roundtables sind eigene Einträge in der Agenda."
+      ],
+      "sourceUrl": "https://push-conference.com/program#fri-23-oct",
+      "tags": [],
+      "bookingRequired": false,
+      "group": "A"
+    },
+    {
+      "id": "2026-10-23-embracing-constraints",
+      "day": "2026-10-23",
+      "start": "13:45",
+      "end": "15:00",
+      "endEstimated": true,
+      "title": "Embracing Constraints",
+      "type": "Lightning Talks",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Simon Feierabend",
+          "role": "Expert for Digital Accessibility",
+          "company": "Stiftung Pfennigparade",
+          "bio": "Simon Feierabend · Expert for Digital Accessibility · Stiftung Pfennigparade",
+          "image": "https://push-conference.com/assets/simon-feierabend-CADrN5el.png"
+        },
+        {
+          "name": "Eva Duwenkamp",
+          "role": "Cofounder & Creative Director",
+          "company": "Outer Media",
+          "bio": "Eva Duwenkamp · Cofounder & Creative Director · Outer Media",
+          "image": "https://push-conference.com/assets/eva-duwenkamp-CJiqdFRo.png"
+        },
+        {
+          "name": "Marjo Tikkanen",
+          "role": "Senior Product Designer",
+          "company": "Ex-Oviva",
+          "bio": "Marjo Tikkanen · Senior Product Designer · Ex-Oviva",
+          "image": "https://push-conference.com/assets/marjo-tikkanen-WL_DVGjq.png"
+        }
+      ],
+      "tldr": "Mehrere kompakte Vorträge zum Thema Embracing Constraints. Eine Alternative zu den parallelen Breakouts.",
+      "description": [
+        "Common Pitfalls in Smartphone App Accessibility: Häufige Barrierefreiheitsprobleme nativer Smartphone-Apps selbst erkennen.",
+        "Simon Feierabend übersetzt Anforderungen der EN 301 549 in anschauliche Beispiele aus seiner Beratungspraxis. Du lernst typische Fehler und praktische Prüfprinzipien kennen, ohne tiefes technisches Vorwissen mitbringen zu müssen.",
+        "Reading Room Online: How UX Unlocks Literacy: Wie spielerische UX und nachvollziehbare KI-Auswertung das Lesenlernen unterstützen.",
+        "Eva Duwenkamp stellt die kostenlose browserbasierte Lernplattform LEON vor. Die Fallstudie zeigt, wie das Team digitale Unterstützung für den Unterricht gestaltet und mit dem Rückgang von Lesekompetenz an Grundschulen umgeht.",
+        "The Bureaucracy Wall: Designing Acquisition for a Prescribed Healthcare App: Zugang zu digitalen Gesundheitsanwendungen trotz bürokratischer Hürden gestalten.",
+        "Marjo Tikkanen berichtet aus ihrer Arbeit an der Nutzergewinnung für Oviva. Sie erklärt, warum klassische Consumer-Muster bei verschriebenen Gesundheits-Apps oft scheitern, und betrachtet Abläufe zwischen Arztpraxis, Versicherung und App aus Nutzersicht."
+      ],
+      "sourceUrl": "https://push-conference.com/program#fri-23-oct",
+      "tags": [
+        "KI & Design",
+        "Leadership",
+        "Accessibility"
+      ],
+      "bookingRequired": true,
+      "group": "B"
+    },
+    {
+      "id": "2026-10-23-designing-an-ai-native-design-organization",
+      "day": "2026-10-23",
+      "start": "13:45",
+      "end": "15:00",
+      "endEstimated": true,
+      "title": "Designing an AI-Native Design Organization",
+      "type": "Breakout",
+      "room": "Room 1",
+      "speakers": [
+        {
+          "name": "Devin Harold",
+          "role": "Director",
+          "company": "Byte by Yum!",
+          "bio": "Devin Harold · Director · Byte by Yum!",
+          "image": "https://push-conference.com/assets/devin-harold-DLt0EdxO.png"
+        }
+      ],
+      "tldr": "KI nicht nur als Tool einführen, sondern die Arbeitsweise der Designorganisation neu gestalten.",
+      "description": [
+        "Devin Harold berichtet, wie sein Team KI in Research, Kritik, Dokumentation und Entscheidungen eingebunden hat. Die Session untersucht organisatorische Veränderungen, schwierige Führungsentscheidungen und die Frage, wie frei werdende Kapazität in anspruchsvollere Designarbeit fließt."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/designing-an-ai-native-design-organization",
+      "tags": [
+        "Hands-on",
+        "KI & Design",
+        "Research",
+        "Leadership"
+      ],
+      "bookingRequired": true,
+      "group": "B"
+    },
+    {
+      "id": "2026-10-23-how-you-show-up-a-practical-framework-for-leading-through-uncertainty",
+      "day": "2026-10-23",
+      "start": "13:45",
+      "end": "15:00",
+      "endEstimated": true,
+      "title": "How You Show Up: A Practical Framework for Leading Through Uncertainty",
+      "type": "Breakout",
+      "room": "Room 2",
+      "speakers": [
+        {
+          "name": "Reem Alwahabi",
+          "role": "Director of Product Design",
+          "company": "DeepL",
+          "bio": "Reem Alwahabi · Director of Product Design · DeepL",
+          "image": "https://push-conference.com/__l5e/assets-v1/0ac2ec7c-b744-4b86-8516-124d49303488/reem-alwahabi.png"
+        },
+        {
+          "name": "Matheus Mari",
+          "role": "Product Design Manager",
+          "company": "DeepL",
+          "bio": "Matheus Mari · Product Design Manager · DeepL",
+          "image": "https://push-conference.com/__l5e/assets-v1/492c962b-49da-4af6-ab14-637e1c3463fc/matheus-mari.png"
+        }
+      ],
+      "tldr": "Ein persönliches Framework für Kommunikation und Führung in unsicheren Situationen entwickeln.",
+      "description": [
+        "Live-Abstimmungen, Gruppengespräche und Übungen machen reale Arbeitssituationen greifbar. Reem Alwahabi und Matheus Mari helfen dir, das eigene Verhalten unter Druck zu reflektieren und bewusster mit schwierigen Gesprächen und Entscheidungen umzugehen."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/how-you-show-up-a-practical-framework-for-leading-through-uncertainty",
+      "tags": [
+        "Hands-on"
+      ],
+      "bookingRequired": true,
+      "group": "B"
+    },
+    {
+      "id": "2026-10-23-how-design-is-automated-at-n8n",
+      "day": "2026-10-23",
+      "start": "13:45",
+      "end": "15:00",
+      "endEstimated": true,
+      "title": "How Design Is Automated at an AI Automation Company",
+      "type": "Breakout",
+      "room": "Room 3",
+      "speakers": [
+        {
+          "name": "Jake Ranallo",
+          "role": "Senior Product Designer",
+          "company": "n8n",
+          "bio": "Jake Ranallo · Senior Product Designer · n8n",
+          "image": "https://push-conference.com/assets/jake-ranallo-CtZJuf4-.png"
+        }
+      ],
+      "tldr": "Erkennen, welche Designaufgaben sich automatisieren lassen und wo dein Urteil gefragt bleibt.",
+      "description": [
+        "Jake Ranallo teilt Erfahrungen aus n8n: von der Suche nach ineffizienten Prozessschritten bis zu praktischen Automatisierungen. Geschmack, Empathie und die Verantwortung für Nutzende bilden dabei die Grenze und den Maßstab für sinnvolle Entlastung."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/how-design-is-automated-at-n8n",
+      "tags": [
+        "Hands-on",
+        "KI & Design"
+      ],
+      "bookingRequired": true,
+      "group": "B"
+    },
+    {
+      "id": "2026-10-23-fine-to-on-brand-coaching-teams-to-direct-ai",
+      "day": "2026-10-23",
+      "start": "13:45",
+      "end": "15:00",
+      "endEstimated": true,
+      "title": "From “Fine” to On-Brand: Coaching Your Team to Direct AI",
+      "type": "Breakout",
+      "room": "Room 4",
+      "speakers": [
+        {
+          "name": "Whitney Lacey",
+          "role": "Head of Content Design",
+          "company": "Expedia Group",
+          "bio": "Whitney Lacey · Head of Content Design · Expedia Group",
+          "image": "https://push-conference.com/assets/whitney-lacey-BA1Cy5gy.png"
+        }
+      ],
+      "tldr": "KI-Content gezielt führen: ein Briefing-, Bewertungs- und Coachingprozess für Teams.",
+      "description": [
+        "Whitney Lacey führt durch eine praktische Fallstudie und einen vierteiligen Ablauf aus Definition, Anleitung, Bewertung und Verbesserung. Du übst, Qualität einzuordnen und Teams besser anzuleiten. Bitte eigenen Laptop und Zugang zu Claude mitbringen."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/fine-to-on-brand-coaching-teams-to-direct-ai",
+      "tags": [
+        "Hands-on",
+        "KI & Design",
+        "Leadership"
+      ],
+      "bookingRequired": true,
+      "group": "B"
+    },
+    {
+      "id": "2026-10-23-mastering-stakeholder-dynamics-in-complex-b2b-environments",
+      "day": "2026-10-23",
+      "start": "13:45",
+      "end": "15:00",
+      "endEstimated": true,
+      "title": "Mastering Stakeholder Dynamics in Complex B2B Environments",
+      "type": "Breakout",
+      "room": "Room 5",
+      "speakers": [
+        {
+          "name": "Maria Teresa Stella",
+          "role": "Senior UX Designer",
+          "company": "Allitude",
+          "bio": "Maria Teresa Stella · Senior UX Designer · Allitude",
+          "image": "https://push-conference.com/assets/maria-teresa-stella-BDvVmaYP.png"
+        }
+      ],
+      "tldr": "Schwierige Stakeholder-Situationen in B2B-Projekten gemeinsam durchspielen.",
+      "description": [
+        "Eine moderierte Gruppenübung stellt ein realistisches Konfliktszenario in den Mittelpunkt. Du erarbeitest Strategien für die Vorbereitung, das Gespräch selbst und die Nachbereitung. Die Session richtet sich besonders an Designer in komplexen Organisationen und Umgebungen mit geringer UX-Reife."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/mastering-stakeholder-dynamics-in-complex-b2b-environments",
+      "tags": [
+        "Hands-on",
+        "Leadership"
+      ],
+      "bookingRequired": true,
+      "group": "B"
+    },
+    {
+      "id": "2026-10-23-creating-a-roadmap-to-navigate-ai-change",
+      "day": "2026-10-23",
+      "start": "13:45",
+      "end": "15:00",
+      "endEstimated": true,
+      "title": "Creating a Roadmap to Navigate AI Change",
+      "type": "Breakout",
+      "room": "Room 6",
+      "speakers": [
+        {
+          "name": "Angela Pesta",
+          "role": "Chief Design Officer",
+          "company": "bsport",
+          "bio": "Angela Pesta · Chief Design Officer · bsport",
+          "image": "https://push-conference.com/assets/angela-pesta-D4ugvU6L.png"
+        }
+      ],
+      "tldr": "Change Management auf die eigene UX-Praxis und die KI-Transformation übertragen.",
+      "description": [
+        "Angela Pesta verbindet organisatorischen Wandel mit Designarbeit. Interaktive Übungen helfen bei neuen Rollen, Kompetenzen und Vereinbarungen zwischen Disziplinen. Die Werkzeuge lassen sich an Unternehmensgröße, Branche und UX-Reife anpassen."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/creating-a-roadmap-to-navigate-ai-change",
+      "tags": [
+        "Hands-on",
+        "KI & Design"
+      ],
+      "bookingRequired": true,
+      "group": "B"
+    },
+    {
+      "id": "2026-10-23-roundtable-1400-1",
+      "day": "2026-10-23",
+      "start": "14:00",
+      "end": "14:30",
+      "endEstimated": false,
+      "title": "Becoming Unfuckwithable: How Can We Build Resilience and Relevance In The Age of Uncertainty?",
+      "type": "Roundtable",
+      "room": "Roundtable · Tisch 1",
+      "group": "A",
+      "speakers": [
+        {
+          "name": "Akshan Ish",
+          "role": "Senior Staff Product Designer",
+          "company": "Miro",
+          "bio": "Akshan Ish · Senior Staff Product Designer · Miro",
+          "image": "https://push-conference.com/__l5e/assets-v1/aa423a19-748d-49f2-9f36-6302624bfb65/akshan-ish.png"
+        }
+      ],
+      "tldr": "Über Resilienz und berufliche Relevanz in unsicheren Zeiten sprechen.",
+      "description": [
+        "Moderierter Austausch mit bis zu zehn Personen, ohne Folien und ohne Aufzeichnung. Jede Runde dauert 30 Minuten.",
+        "Morgens am Info Point anmelden. Spontanes Dazukommen ist möglich, wenn zum Start noch Plätze frei sind."
+      ],
+      "sourceUrl": "https://push-conference.com/program/roundtable-discussions",
+      "tags": [
+        "Austausch"
+      ],
+      "bookingRequired": true
+    },
+    {
+      "id": "2026-10-23-roundtable-1400-2",
+      "day": "2026-10-23",
+      "start": "14:00",
+      "end": "14:30",
+      "endEstimated": false,
+      "title": "How Do Designers Communicate Their Value in the Age of AI",
+      "type": "Roundtable",
+      "room": "Roundtable · Tisch 2",
+      "group": "A",
+      "speakers": [
+        {
+          "name": "Ben Sauer",
+          "role": "Coach, Author",
+          "company": "Clouds and Clocks",
+          "bio": "Ben Sauer · Coach, Author · Clouds and Clocks",
+          "image": "https://push-conference.com/__l5e/assets-v1/147aa052-4a69-415d-b155-71c25fd88fae/ben-sauer.png"
+        }
+      ],
+      "tldr": "Den eigenen Wert als Designer im KI-Zeitalter verständlich vermitteln.",
+      "description": [
+        "Moderierter Austausch mit bis zu zehn Personen, ohne Folien und ohne Aufzeichnung. Jede Runde dauert 30 Minuten.",
+        "Morgens am Info Point anmelden. Spontanes Dazukommen ist möglich, wenn zum Start noch Plätze frei sind."
+      ],
+      "sourceUrl": "https://push-conference.com/program/roundtable-discussions",
+      "tags": [
+        "Austausch"
+      ],
+      "bookingRequired": true
+    },
+    {
+      "id": "2026-10-23-designing-for-buy-in",
+      "day": "2026-10-23",
+      "start": "15:00",
+      "end": "15:30",
+      "endEstimated": true,
+      "title": "Designing for Buy-In",
+      "type": "Keynote",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Natalia Marmolejo",
+          "role": "Design Lead",
+          "company": "Rabobank",
+          "bio": "Natalia Marmolejo · Design Lead · Rabobank",
+          "image": "https://push-conference.com/assets/natalia-marmolejo-CotgJX_X.png"
+        }
+      ],
+      "tldr": "Mit Employee Experience über Deliverables hinaus organisatorische Entscheidungen verändern.",
+      "description": [
+        "Natalia Marmolejo zeigt Beispiele zu mentaler Gesundheit, Pendelregeln und Intranet. Die Keynote untersucht, wie Design Kultur, HR-Strategie und Zusammenarbeit in einer großen Organisation beeinflussen kann."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/designing-for-buy-in",
+      "tags": [
+        "Leadership"
+      ],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-23-becoming-a-love-brand-in-an-industry-nobody-loves",
+      "day": "2026-10-23",
+      "start": "15:30",
+      "end": "16:00",
+      "endEstimated": true,
+      "title": "Becoming a Love Brand in an Industry Nobody Loves",
+      "type": "Keynote",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Bastian Gierull",
+          "role": "CEO Germany",
+          "company": "Octopus Energy",
+          "bio": "Bastian Gierull · CEO Germany · Octopus Energy",
+          "image": "https://push-conference.com/assets/bastian-gierull-CDx4FaHv.png"
+        }
+      ],
+      "tldr": "Wie gute Service-Erlebnisse selbst einen Energieanbieter liebenswert machen können.",
+      "description": [
+        "Bastian Gierull betrachtet Kundenbindung durch UX, Service Design und funktionierende Hintergrundprozesse. An Kundengeschichten zeigt er, wie kleine Entscheidungen Vertrauen schaffen und wie persönliche Betreuung bei wachsender Kundenzahl erhalten bleibt."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/becoming-a-love-brand-in-an-industry-nobody-loves",
+      "tags": [],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-23-coffee-break",
+      "day": "2026-10-23",
+      "start": "16:00",
+      "end": "16:30",
+      "endEstimated": true,
+      "title": "Kaffeepause",
+      "type": "Pause",
+      "room": "Alte Kongresshalle",
+      "speakers": [],
+      "tldr": "Zeit für Kaffee, Kuchen und Gespräche.",
+      "description": [
+        "Nutze die halbe Stunde zum Durchatmen, für die Ausstellung oder zum Austausch mit anderen Gästen."
+      ],
+      "sourceUrl": "https://push-conference.com/program#fri-23-oct",
+      "tags": [],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-23-the-messy-middle",
+      "day": "2026-10-23",
+      "start": "16:30",
+      "end": "17:30",
+      "endEstimated": true,
+      "title": "The Messy Middle – Panel Discussion",
+      "type": "Talk",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "To be announced",
+          "role": "",
+          "company": "",
+          "bio": "To be announced · ",
+          "image": "https://push-conference.com/__l5e/assets-v1/53d78141-efe9-49dc-ad62-5b67494dc09f/panel-discussion.png"
+        }
+      ],
+      "tldr": "Eine Panelrunde zieht Bilanz: Wie navigiert UX zwischen KI-Wandel und täglicher Praxis?",
+      "description": [
+        "Führungskräfte und Praktiker diskutieren den aktuellen Zustand der Branche. Themen sind unterschiedliche Ansätze zur KI-Transformation, sinnvolle Grenzen und die Frage, wann Teams eine Entwicklung vorantreiben oder bewusst hinterfragen sollten."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/the-messy-middle",
+      "tags": [
+        "KI & Design",
+        "Leadership"
+      ],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-23-courage-is-the-last-human-craft-aleks-melnikova",
+      "day": "2026-10-23",
+      "start": "17:30",
+      "end": "18:00",
+      "endEstimated": true,
+      "title": "Courage Is the Last Human Craft",
+      "type": "Keynote",
+      "room": "Main Stage",
+      "speakers": [
+        {
+          "name": "Aleks Melnikova",
+          "role": "Founder",
+          "company": "DRĄSA Studio",
+          "bio": "Aleks Melnikova · Founder · DRĄSA Studio",
+          "image": "https://push-conference.com/__l5e/assets-v1/35498de3-9fc7-4cbc-ab23-b03384cf9126/aleks-melnikova.png"
+        }
+      ],
+      "tldr": "Mut als Handwerk: klar hinsehen, Beobachtungen aussprechen und bewusst entscheiden.",
+      "description": [
+        "Aleks Melnikova verbindet Erfahrungen aus Führung und Coaching mit der Produktpraxis. Die abschließende Keynote untersucht, wie Teams ihre eigenen Denk- und Handlungsmuster erkennen und auch unter hohem Veränderungsdruck verantwortlich gestalten können."
+      ],
+      "sourceUrl": "https://push-conference.com/2026/courage-is-the-last-human-craft-aleks-melnikova",
+      "tags": [
+        "Leadership",
+        "Product & Craft"
+      ],
+      "bookingRequired": false
+    },
+    {
+      "id": "2026-10-23-end-of-push-ux-2026",
+      "day": "2026-10-23",
+      "start": "18:00",
+      "end": "18:15",
+      "endEstimated": true,
+      "title": "Abschluss & Abschied",
+      "type": "Organisation",
+      "room": "Alte Kongresshalle",
+      "speakers": [],
+      "tldr": "Gemeinsamer Abschluss der PUSH UX 2026.",
+      "description": [
+        "Der Veranstalter plant das Ende gegen 18:15 Uhr."
+      ],
+      "sourceUrl": "https://push-conference.com/program#fri-23-oct",
+      "tags": [],
+      "bookingRequired": false
+    }
+  ],
+  "venue": {
+    "name": "Alte Kongresshalle",
+    "address": "Am Bavariapark 14",
+    "city": "80339 München",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Alte+Kongresshalle+Am+Bavariapark+14+Muenchen",
+    "sourceUrl": "https://push-conference.com/location",
+    "transit": [
+      "Vom Hauptbahnhof: U4 oder U5, laut Veranstalter etwa 15 Minuten.",
+      "Vom Flughafen: S1 oder S8 zum Hauptbahnhof, anschließend U-Bahn; insgesamt etwa 60 Minuten."
+    ],
+    "floorplanUrl": null
+  }
+}
