@@ -12,7 +12,9 @@ type Request=IncomingMessage&{body?:unknown};
 class ApiError extends Error{constructor(public status:number,message:string){super(message);}}
 const result=(res:ServerResponse,status:number,data:unknown)=>{res.statusCode=status;res.end(JSON.stringify(data));};
 export async function readRoom(key:string){
- const blob=await get(pathFor(key),{access:'private',useCache:false});
+ // Compression can turn the response ETag into a weak validator (W/...).
+ // Conditional writes need the strong ETag belonging to these exact bytes.
+ const blob=await get(pathFor(key),{access:'private',useCache:false,headers:{'accept-encoding':'identity'}});
  if(!blob||blob.statusCode!==200)throw new ApiError(404,'Dieser Plan wurde nicht gefunden. Prüfe deinen Einladungslink.');
  const data=JSON.parse(await new Response(blob.stream).text())as RoomData;
  // Existing plans gain an empty Tobi selection without changing keys or saved choices.
@@ -65,7 +67,8 @@ export default async function handler(req:Request,res:ServerResponse){
  }catch(e){
   if(e instanceof ApiError)return result(res,e.status,{error:e.message});
   if(e instanceof SyntaxError)return result(res,400,{error:'Die Anfrage konnte nicht gelesen werden.'});
-  console.error('Planner request failed',e instanceof Error?e.name:'UnknownError');
-  result(res,503,{error:'Der gemeinsame Plan ist gerade nicht erreichbar. Deine Auswahl bleibt gespeichert. Bitte erneut versuchen.'});
+  const code=e instanceof Error?e.constructor.name:'UnknownError';
+  console.error('Planner request failed',code,e instanceof Error?e.message:'Unknown error');
+  result(res,503,{error:'Der gemeinsame Plan ist gerade nicht erreichbar. Deine Auswahl bleibt gespeichert. Bitte erneut versuchen.',code});
  }
 }
