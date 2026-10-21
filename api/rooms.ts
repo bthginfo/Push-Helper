@@ -14,7 +14,11 @@ const result=(res:ServerResponse,status:number,data:unknown)=>{res.statusCode=st
 export async function readRoom(key:string){
  const blob=await get(pathFor(key),{access:'private',useCache:false});
  if(!blob||blob.statusCode!==200)throw new ApiError(404,'Dieser Plan wurde nicht gefunden. Prüfe deinen Einladungslink.');
- return {data:JSON.parse(await new Response(blob.stream).text())as RoomData,etag:blob.blob.etag};
+ const data=JSON.parse(await new Response(blob.stream).text())as RoomData;
+ // Existing plans gain an empty Tobi selection without changing keys or saved choices.
+ const source=data.favorites;
+ data.favorites={you:Array.isArray(source?.you)?source.you:[],daniel:Array.isArray(source?.daniel)?source.daniel:[],tobi:Array.isArray(source?.tobi)?source.tobi:[]};
+ return {data,etag:blob.blob.etag};
 }
 export default async function handler(req:Request,res:ServerResponse){
  res.setHeader('Content-Type','application/json; charset=utf-8');res.setHeader('Cache-Control','private, no-store');res.setHeader('Vercel-CDN-Cache-Control','no-store');res.setHeader('X-Content-Type-Options','nosniff');
@@ -28,11 +32,11 @@ export default async function handler(req:Request,res:ServerResponse){
    if(typeof key!=='string'||!keyPattern.test(key))throw new ApiError(400,'Der Einladungslink ist ungültig.');
    return result(res,200,(await readRoom(key)).data);
   }
-  if(Number(req.headers['content-length']||0)>12_000)throw new ApiError(413,'Die Anfrage ist zu groß.');
+  if(Number(req.headers['content-length']||0)>50_000)throw new ApiError(413,'Die Anfrage ist zu groß.');
   let body=req.body;
   if(typeof body==='string')body=JSON.parse(body);
   if(!body||typeof body!=='object')throw new ApiError(400,'Die Anfrage ist unvollständig.');
-  if(JSON.stringify(body).length>12_000)throw new ApiError(413,'Die Anfrage ist zu groß.');
+  if(JSON.stringify(body).length>50_000)throw new ApiError(413,'Die Anfrage ist zu groß.');
   const b=body as Record<string,unknown>;
   if(b.action==='create'){
    const ip=(req.headers['x-forwarded-for']||req.socket.remoteAddress||'unknown').toString().split(',')[0];
@@ -40,15 +44,15 @@ export default async function handler(req:Request,res:ServerResponse){
    if(!counter||now-counter.at>=3_600_000)requests.set(ip,{at:now,count:1});else counter.count++;
    if(requests.size>1000)requests.clear();
    const room=randomBytes(32).toString('base64url');
-   const favorites={you:[]as string[],daniel:[]as string[]};
-   for(const profile of ['you','daniel']as const){const incoming=(b.favorites as Record<string,unknown>)?.[profile];if(Array.isArray(incoming))favorites[profile]=[...new Set(incoming.filter((v):v is string=>typeof v==='string'&&ids.has(v)))].slice(0,100);}
-   const data:RoomData={name:typeof b.name==='string'?b.name.trim().slice(0,30)||'Ich':'Ich',favorites,version:randomUUID()};
+   const favorites={you:[]as string[],daniel:[]as string[],tobi:[]as string[]};
+   for(const profile of ['you','daniel','tobi']as const){const incoming=(b.favorites as Record<string,unknown>)?.[profile];if(Array.isArray(incoming))favorites[profile]=[...new Set(incoming.filter((v):v is string=>typeof v==='string'&&ids.has(v)))].slice(0,100);}
+   const data:RoomData={name:typeof b.name==='string'?b.name.trim().slice(0,30)||'Julius':'Julius',favorites,version:randomUUID()};
    await put(pathFor(room),JSON.stringify(data),{access:'private',addRandomSuffix:false,contentType:'application/json',cacheControlMaxAge:60});
    return result(res,201,{room,...data});
   }
   if(typeof key!=='string'||!keyPattern.test(key))throw new ApiError(400,'Der Einladungslink ist ungültig.');
   if(b.action!=='favorite'&&b.action!=='rename')throw new ApiError(400,'Unbekannte Aktion.');
-  if(b.action==='favorite'&&(!['you','daniel'].includes(String(b.profile))||typeof b.sessionId!=='string'||!ids.has(b.sessionId)||typeof b.selected!=='boolean'))throw new ApiError(400,'Diese Session oder Person ist ungültig.');
+  if(b.action==='favorite'&&(!['you','daniel','tobi'].includes(String(b.profile))||typeof b.sessionId!=='string'||!ids.has(b.sessionId)||typeof b.selected!=='boolean'))throw new ApiError(400,'Diese Session oder Person ist ungültig.');
   if(b.action==='rename'&&(typeof b.name!=='string'||!b.name.trim()||b.name.length>30))throw new ApiError(400,'Bitte verwende einen Namen mit 1 bis 30 Zeichen.');
   for(let attempt=0;attempt<4;attempt++){
    const {data,etag}=await readRoom(key);
@@ -56,7 +60,7 @@ export default async function handler(req:Request,res:ServerResponse){
    else{const p=b.profile as Profile,id=b.sessionId as string;data.favorites[p]=b.selected?[...new Set([...data.favorites[p],id])]:data.favorites[p].filter(v=>v!==id);}
    data.version=randomUUID();
    try{await put(pathFor(key),JSON.stringify(data),{access:'private',addRandomSuffix:false,allowOverwrite:true,ifMatch:etag,contentType:'application/json',cacheControlMaxAge:60});return result(res,200,data);}
-   catch(e){if(e instanceof BlobPreconditionFailedError&&attempt<3)continue;throw e;}
+   catch(e){if(e instanceof BlobPreconditionFailedError&&attempt<3){await new Promise(resolve=>setTimeout(resolve,100*(attempt+1)+Math.random()*150));continue;}throw e;}
   }
  }catch(e){
   if(e instanceof ApiError)return result(res,e.status,{error:e.message});

@@ -1,6 +1,6 @@
 # PUSH Companion
 
-Eine mobile Agenda für zwei Kollegen auf der PUSH UX am **22. und 23. Oktober 2026** in München. React, TypeScript und Vite; gemeinsame Planung über eine Vercel Function und privaten Vercel Blob Storage.
+Eine mobile Agenda für Julius, Daniel und Tobi auf der PUSH UX am **22. und 23. Oktober 2026** in München. React, TypeScript und Vite; gemeinsame Planung über eine Vercel Function und privaten Vercel Blob Storage.
 
 ## Funktionen
 
@@ -8,7 +8,7 @@ Eine mobile Agenda für zwei Kollegen auf der PUSH UX am **22. und 23. Oktober 2
 - Live-Status und nächster Termin nach Münchner Ortszeit (`Europe/Berlin`), automatische Tagesauswahl und Countdown vor der Konferenz.
 - Suche, Raum-/Formatfilter, persönliche und gemeinsame Auswahl, Warnungen bei Terminüberschneidungen.
 - Detail-Sheets mit deutschen redaktionellen Kurzfassungen und Links zu den Originalinformationen.
-- Privater Einladungslink, getrennte Favoriten für dich und Daniel, lokale Speicherung und Synchronisierung nach Verbindungsabbrüchen.
+- Private Einladungslinks mit vorausgewähltem Profil, getrennte Favoriten für Julius, Daniel und Tobi, lokale Speicherung und Synchronisierung nach Verbindungsabbrüchen.
 - Light/Dark/System, installierbare Web-App, Offline-Agenda nach dem ersten Laden und Kalenderexport als `.ics`.
 - Anreise, bestätigte Räume und Kartenlink. Ein offizieller Gebäudeplan war bei der Erfassung nicht veröffentlicht.
 
@@ -27,7 +27,7 @@ Vite zeigt lokal die Agenda und speichert Favoriten auf dem Gerät. Für den gem
 
 ## Gemeinsamer Plan
 
-Über „Team“ einen Plan erstellen, eigenen Namen setzen und den Einladungslink an Daniel weitergeben. Daniel öffnet den Link und tritt mit seinem Profil bei. Der Link enthält einen zufälligen Schlüssel im URL-Fragment. **Jeder mit diesem Link kann beide Profile bearbeiten.** Die Profile dienen zur Zuordnung, sind keine Benutzerkonten. Der Store ist privat; der Server validiert Schlüssel und Session-IDs. Updates werden mit ETag-Vergleich geschrieben, damit parallele Änderungen nicht gegenseitig verloren gehen.
+Über „Team“ einen Plan erstellen, eigenen Namen setzen und über „Daniel einladen“ oder „Tobi einladen“ den jeweiligen Link kopieren. Der Link wählt das passende Profil beim Beitritt vor. Alte Einladungen funktionieren weiterhin; bestehende Favoriten bleiben bei der Erweiterung auf drei Personen erhalten. Der Link enthält einen zufälligen Schlüssel im URL-Fragment. **Jeder mit diesem Link kann alle drei Profile bearbeiten.** Die Profile dienen zur Zuordnung, sind keine Benutzerkonten. Der Store ist privat; der Server validiert Schlüssel und Session-IDs. Updates werden mit ETag-Vergleich geschrieben, damit parallele Änderungen nicht gegenseitig verloren gehen.
 
 Die App gleicht bei geöffnetem Tab alle 60 Sekunden, nach Rückkehr in den Tab und nach Änderungen ab. Offline-Änderungen bleiben auf dem jeweiligen Gerät vorgemerkt. Das Offline-Caching umfasst die App, nicht die API oder Einladungslinks. Es gibt keine Benachrichtigungen im Hintergrund bei geschlossener App.
 
@@ -45,7 +45,7 @@ Der Import prüft die bekannten Roundtable-Titel gegen die Quelle und stoppt bei
 
 ## Hosting und Kosten
 
-Vercel-Projekt `push-helper`, Region Frankfurt. Privater Blob Store `push-helper-planning`. Das verbundene Konto wurde als Hobby bestätigt; es wurde kein bezahlter Tarif gebucht. Hobby hat feste kostenlose Kontingente und stoppt bei Überschreitung statt Mehrverbrauch abzurechnen. Datenmenge und Polling sind für zwei Personen klein. Die Kontingente werden mit anderen Projekten im Konto geteilt.
+Vercel-Projekt `push-helper`, Region Frankfurt. Privater Blob Store `push-helper-planning`. Das verbundene Konto wurde als Hobby bestätigt; es wurde kein bezahlter Tarif gebucht. Hobby hat feste kostenlose Kontingente und stoppt bei Überschreitung statt Mehrverbrauch abzurechnen. Datenmenge und Polling sind für drei Personen klein. Die Kontingente werden mit anderen Projekten im Konto geteilt.
 
 ## Prüfungen
 

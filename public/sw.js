@@ -1,4 +1,4 @@
-const CACHE = 'push-companion-v2';
+const CACHE = 'push-companion-v3';
 const SHELL = ['/manifest.webmanifest', '/icon.svg', '/theme-init.js', '/icon-192.png', '/icon-512.png', '/apple-touch-icon.png'];
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
