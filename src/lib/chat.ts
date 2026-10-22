@@ -1,5 +1,5 @@
-import type { ChatMessage } from './types';
-import { isProfile } from './people';
+import type { ChatMessage } from './types.js';
+import { isProfile } from './people.js';
 
 export const MAX_MESSAGE_LENGTH = 1000;
 export const MAX_MESSAGES = 200;

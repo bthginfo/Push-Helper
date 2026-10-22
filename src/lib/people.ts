@@ -1,4 +1,4 @@
-import type { Profile, RoomData } from './types';
+import type { Profile, RoomData } from './types.js';
 
 export const PROFILES: readonly Profile[] = ['you', 'daniel', 'tobi', 'rafi'];
 export const profileName = (profile: Profile, ownerName = 'Julius') => profile === 'you' ? ownerName : profile === 'daniel' ? 'Daniel' : profile === 'tobi' ? 'Tobi' : 'Rafi';

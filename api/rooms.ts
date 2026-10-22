@@ -2,9 +2,9 @@ import {get,put,BlobPreconditionFailedError}from '@vercel/blob';
 import {createHash,randomBytes,randomUUID}from 'node:crypto';
 import type {IncomingMessage,ServerResponse}from 'node:http';
 import program from '../src/data/program.json' with {type:'json'};
-import type {Profile,RoomData}from '../src/lib/types';
-import {PROFILES,isProfile,normalizeFavorites}from '../src/lib/people';
-import {isMessageId,isMessageText,normalizeMessages,MAX_MESSAGES}from '../src/lib/chat';
+import type {Profile,RoomData}from '../src/lib/types.js';
+import {PROFILES,isProfile,normalizeFavorites}from '../src/lib/people.js';
+import {isMessageId,isMessageText,normalizeMessages,MAX_MESSAGES}from '../src/lib/chat.js';
 
 const ids=new Set(program.sessions.map(s=>s.id));
 const keyPattern=/^[A-Za-z0-9_-]{43}$/;
