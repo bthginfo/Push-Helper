@@ -10,7 +10,9 @@ Eine mobile Agenda für Julius, Daniel und Tobi auf der PUSH UX am **22. und 23.
 - Detail-Sheets mit deutschen redaktionellen Kurzfassungen und Links zu den Originalinformationen.
 - Private Einladungslinks mit vorausgewähltem Profil, getrennte Favoriten für Julius, Daniel und Tobi, lokale Speicherung und Synchronisierung nach Verbindungsabbrüchen.
 - Light/Dark/System, installierbare Web-App, Offline-Agenda nach dem ersten Laden und Kalenderexport als `.ics`.
-- Anreise, bestätigte Räume und Kartenlink. Ein offizieller Gebäudeplan war bei der Erfassung nicht veröffentlicht.
+- Persönliche Live-Karte auf Basis des fotografierten Venue-Plans: Erd- und Obergeschoss, Breakouts 1–6, Main Stage, Foyer, Lounge und Roundtables. Profilwechsel, Zeitvorschau, Zoom und Originalplan funktionieren auch offline.
+- Die Karte priorisiert die Vormerkungen der aktiven Person; sonst folgt sie Gruppe A. Parallele Optionen und Konflikte werden zur Entscheidung angezeigt. Unbestimmte Räume bleiben als solche erkennbar; bei Pausen dient das Foyer nur zur Orientierung.
+- Anreise, bestätigte Räume und externer Kartenlink.
 
 ## Entwicklung
 
@@ -49,4 +51,4 @@ Vercel-Projekt `push-helper`, Region Frankfurt. Privater Blob Store `push-helper
 
 ## Prüfungen
 
-`npm test` prüft Agenda-Konsistenz, beide Tage und Räume, Zeitgrenzen unabhängig von der Gerätezeitzone, Terminüberschneidungen sowie RFC-konformes UTF-8-Folding und Zeitzonen im Kalenderexport. Der Produktionsbuild prüft die Client-Typen; die Function kann separat mit TypeScript geprüft werden. Der Einladungs- und Synchronisierungsfluss wird gegen die bereitgestellte Function getestet.
+`npm test` prüft zusätzlich die persönliche Zielauswahl, Etagen- und Raumzuordnung, Pausen, parallele Optionen, Konflikte sowie Tages- und Zeitgrenzen. Weitere Prüfungen umfassen Agenda-Konsistenz, beide Tage und Räume, Zeitgrenzen unabhängig von der Gerätezeitzone, Terminüberschneidungen sowie RFC-konformes UTF-8-Folding und Zeitzonen im Kalenderexport. Der Produktionsbuild prüft die Client-Typen; die Function kann separat mit TypeScript geprüft werden. Der Einladungs- und Synchronisierungsfluss wird gegen die bereitgestellte Function getestet.
