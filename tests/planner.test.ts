@@ -5,10 +5,10 @@ import { normalizeFavorites } from '../src/lib/people';
 import { plannerRequest } from '../src/lib/plannerRequest';
 
 const room = 'a'.repeat(43);
-test('existing two-person plans retain every selection and gain an independent Tobi selection', () => {
+test('existing two-person plans retain every selection and gain independent Tobi and Rafi selections', () => {
   const legacy = { you: ['keynote', 'breakout'], daniel: ['keynote'] };
   const result = normalizeFavorites(legacy);
-  assert.deepEqual(result, { ...legacy, tobi: [] });
+  assert.deepEqual(result, { ...legacy, tobi: [], rafi: [] });
   result.you.push('networking'); result.tobi.push('roundtable');
   assert.deepEqual(legacy, { you: ['keynote', 'breakout'], daniel: ['keynote'] });
   assert.deepEqual(normalizeFavorites({ tobi: ['talk', null, 'talk'] }).tobi, ['talk']);
@@ -17,6 +17,7 @@ test('existing two-person plans retain every selection and gain an independent T
 test('legacy invitations and person-specific invitations address the same plan', () => {
   assert.deepEqual(parseInvitation(`https://push-helper.vercel.app/#room=${room}`), { room });
   assert.deepEqual(parseInvitation(`https://push-helper.vercel.app/?room=${room}&profile=tobi`), { room, profile: 'tobi' });
+  assert.deepEqual(parseInvitation(buildInvitation(room, 'rafi')), { room, profile: 'rafi' });
   assert.deepEqual(parseInvitation(buildInvitation(room, 'tobi')), { room, profile: 'tobi' });
   assert.equal(new URL(buildInvitation(room, 'daniel')).origin, 'https://push-helper.vercel.app');
   assert.deepEqual(parseInvitation(room), { room });
@@ -32,7 +33,8 @@ test('temporary server failures are retried and legacy responses migrate before 
   try {
     const data = await plannerRequest(room);
     assert.equal(calls, 2);
-    assert.deepEqual(data.favorites, { you: ['saved'], daniel: ['also-saved'], tobi: [] });
+    assert.deepEqual(data.messages, []);
+    assert.deepEqual(data.favorites, { you: ['saved'], daniel: ['also-saved'], tobi: [], rafi: [] });
   } finally { globalThis.fetch = original; }
 });
 
@@ -46,4 +48,13 @@ test('creation is never replayed and permanent access failures are not retried',
     await assert.rejects(plannerRequest(room), /Not found/);
     assert.equal(calls, 2);
   } finally { globalThis.fetch = original; }
+});
+
+test('existing three-person favorites and Rafi selections are independently preserved', () => {
+  const existing = { you: ['a'], daniel: ['b'], tobi: ['c'] };
+  const migrated = normalizeFavorites(existing);
+  assert.deepEqual(migrated, { ...existing, rafi: [] });
+  migrated.rafi.push('d');
+  assert.deepEqual(existing, { you: ['a'], daniel: ['b'], tobi: ['c'] });
+  assert.deepEqual(normalizeFavorites(migrated).rafi, ['d']);
 });

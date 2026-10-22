@@ -1,7 +1,8 @@
 import type { RoomData } from './types';
+import { normalizeMessages } from './chat';
 import { normalizeFavorites } from './people';
 
-/** Favorite/rename operations are idempotent; room creation must never be replayed. */
+/** Updates and chat sends (with a stable message ID) are idempotent; creation must never be replayed. */
 export async function plannerRequest(room: string | null, body?: unknown): Promise<RoomData & { room?: string }> {
   const canRetry = !body || (body as { action?: string }).action !== 'create';
   for (let attempt = 0; ; attempt++) {
@@ -20,7 +21,7 @@ export async function plannerRequest(room: string | null, body?: unknown): Promi
       if (!data?.favorites || !Array.isArray(data.favorites.you) || !Array.isArray(data.favorites.daniel) || typeof data.name !== 'string') {
         throw new Error('Der Server hat einen unvollständigen Plan zurückgegeben. Bitte erneut laden.');
       }
-      return { ...data, favorites: normalizeFavorites(data.favorites) };
+      return { ...data, favorites: normalizeFavorites(data.favorites), messages: normalizeMessages(data.messages) };
     } finally { clearTimeout(timeout); }
   }
 }

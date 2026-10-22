@@ -1,15 +1,17 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import type { Profile, RoomData } from './types';
+import type { ChatMessage, Profile, RoomData } from './types';
 import { isProfile, normalizeFavorites } from './people';
+import { isMessageId, isMessageText, mergeMessages, normalizeMessages } from './chat';
 import { buildInvitation, isRoomKey, rememberRoomAddress } from './invitation';
 import { plannerRequest as request } from './plannerRequest';
 
 type Operation = { id: string; room: string; action: 'favorite'; profile: Profile; sessionId: string; selected: boolean }
-  | { id: string; room: string; action: 'rename'; name: string };
-type Stored = { profile: Profile; name: string; favorites: RoomData['favorites']; room: string | null; pending: Operation[] };
+  | { id: string; room: string; action: 'rename'; name: string }
+  | { id: string; room: string; action: 'message'; profile: Profile; text: string; queuedAt: string };
+type Stored = { profile: Profile; name: string; favorites: RoomData['favorites']; room: string | null; messages: ChatMessage[]; lastReadMessageId: string | null; pending: Operation[] };
 type Status = 'local' | 'syncing' | 'synced' | 'offline' | 'error';
 const STORAGE = 'push-companion-planner-v1';
-const empty = (): Stored => ({ profile: 'you', name: 'Julius', favorites: normalizeFavorites(null), room: null, pending: [] });
+const empty = (): Stored => ({ profile: 'you', name: 'Julius', favorites: normalizeFavorites(null), room: null, messages: [], lastReadMessageId: null, pending: [] });
 
 function load(): Stored {
   try {
@@ -18,25 +20,27 @@ function load(): Stored {
     return { profile: isProfile(s.profile) ? s.profile : 'you',
       name: typeof s.name === 'string' && s.name !== 'Ich' ? s.name.slice(0, 30) : 'Julius',
       favorites: normalizeFavorites(s.favorites), room: isRoomKey(s.room) ? s.room : null,
+      messages: isRoomKey(s.room) ? normalizeMessages(s.messages) : [], lastReadMessageId: isMessageId(s.lastReadMessageId) ? s.lastReadMessageId : null,
       pending: Array.isArray(s.pending) ? s.pending.filter((op: Operation) => isRoomKey(op?.room)
-        && (op.action === 'rename' || (op.action === 'favorite' && isProfile(op.profile)))).slice(0, 500) : [] };
+        && (op.action === 'rename' || (op.action === 'favorite' && isProfile(op.profile))
+          || (op.action === 'message' && isMessageId(op.id) && isProfile(op.profile) && isMessageText(op.text) && typeof op.queuedAt === 'string' && Number.isFinite(Date.parse(op.queuedAt))))).slice(0, 500) : [] };
   } catch { return empty(); }
 }
 function overlay(data: RoomData, pending: Operation[], room: string) {
-  const result = { name: data.name, favorites: normalizeFavorites(data.favorites) };
+  const result = { name: data.name, favorites: normalizeFavorites(data.favorites), messages: normalizeMessages(data.messages) };
   for (const op of pending.filter(item => item.room === room)) {
     if (op.action === 'rename') result.name = op.name;
-    else result.favorites[op.profile] = op.selected ? [...new Set([...result.favorites[op.profile], op.sessionId])]
+    else if (op.action === 'favorite') result.favorites[op.profile] = op.selected ? [...new Set([...result.favorites[op.profile], op.sessionId])]
       : result.favorites[op.profile].filter(id => id !== op.sessionId);
   }
   return result;
 }
 const errorMessage = (error: unknown) => error instanceof DOMException && (error.name === 'TimeoutError' || error.name === 'AbortError')
-  ? 'Das Laden dauert zu lange. Deine Auswahl ist gespeichert. Bitte erneut versuchen.'
+  ? 'Das Laden dauert zu lange. Deine Änderungen sind gespeichert. Bitte erneut versuchen.'
   : error instanceof TypeError ? 'Keine Verbindung zum gemeinsamen Plan. Prüfe deine Internetverbindung und versuche es erneut.'
     : error instanceof Error ? error.message : 'Der gemeinsame Plan ist nicht erreichbar. Bitte erneut versuchen.';
 
-export function usePlanner() {
+export function usePlanner(chatActive = false) {
   const [state, setState] = useState<Stored>(load);
   const ref = useRef(state);
   const [syncStatus, setSyncStatus] = useState<Status>(state.room ? 'syncing' : 'local');
@@ -90,6 +94,16 @@ export function usePlanner() {
   useEffect(() => { if (state.room && state.pending.some(op => op.room === state.room)) {
     const timer = setTimeout(() => void sync(), 450); return () => clearTimeout(timer);
   } }, [state.pending, state.room, sync]);
+  useEffect(() => {
+    if (!chatActive || !state.room) return;
+    const timer = window.setInterval(() => { if (!document.hidden) void sync(); }, 10_000);
+    void sync();
+    return () => clearInterval(timer);
+  }, [chatActive, state.room, sync]);
+  useEffect(() => {
+    const last = state.messages.at(-1)?.id;
+    if (chatActive && last && last !== state.lastReadMessageId) commit(current => ({ ...current, lastReadMessageId: last }));
+  }, [chatActive, state.messages, state.lastReadMessageId, commit]);
   const setProfile = useCallback((profile: Profile) => {
     commit(current => ({ ...current, profile }));
     if (ref.current.room) rememberRoomAddress(ref.current.room, profile);
@@ -111,7 +125,7 @@ export function usePlanner() {
     try { const current = ref.current;
       const data = await request(null, { action: 'create', name: current.name, favorites: current.favorites });
       if (!isRoomKey(data.room)) throw new Error('Der Einladungslink konnte nicht erstellt werden.');
-      const room = data.room; commit(value => ({ ...value, ...overlay(data, [], room), room }));
+      const room = data.room; commit(value => ({ ...value, ...overlay(data, [], room), room, lastReadMessageId: null }));
       rememberRoomAddress(room); setSyncStatus('synced'); return room;
     } catch (failure) { const message = errorMessage(failure); setError(message); setSyncStatus('error'); throw new Error(message); }
   }, [commit]);
@@ -120,15 +134,27 @@ export function usePlanner() {
     try {
       if (!isRoomKey(room)) throw new Error('Der Link ist unvollständig. Bitte kopiere den gesamten Einladungslink aus dem Team-Menü.');
       const data = await request(room);
-      commit(current => ({ ...current, ...overlay(data, current.pending, room), room, ...(profile ? { profile } : {}) }));
+      commit(current => ({ ...current, ...overlay(data, current.pending, room), room, lastReadMessageId: current.room === room ? current.lastReadMessageId : null, ...(profile ? { profile } : {}) }));
       rememberRoomAddress(room, profile || ref.current.profile); setSyncStatus('synced');
     } catch (failure) { const message = errorMessage(failure); setError(message); setSyncStatus(ref.current.room ? 'error' : 'local'); throw new Error(message); }
   }, [commit]);
   const leaveRoom = useCallback(() => {
-    commit(current => ({ ...current, room: null })); rememberRoomAddress(null); setSyncStatus('local'); setError(null);
+    commit(current => ({ ...current, room: null, messages: [], lastReadMessageId: null })); rememberRoomAddress(null); setSyncStatus('local'); setError(null);
   }, [commit]);
+  const sendMessage = useCallback((value: string) => {
+    if (!ref.current.room || !isMessageText(value)) return false;
+    const room = ref.current.room, profile = ref.current.profile;
+    commit(current => ({ ...current, pending: [...current.pending, { id: crypto.randomUUID(), room, action: 'message', profile, text: value.trim(), queuedAt: new Date().toISOString() }] }));
+    setSyncStatus(navigator.onLine ? 'syncing' : 'offline');
+    return true;
+  }, [commit]);
+  const pendingMessages = state.pending.filter((op): op is Extract<Operation, { action: 'message' }> => op.room === state.room && op.action === 'message');
+  const messages = mergeMessages(state.messages, pendingMessages.map(op => ({ id: op.id, profile: op.profile, text: op.text, createdAt: op.queuedAt })));
+  const lastReadIndex = state.messages.findIndex(message => message.id === state.lastReadMessageId);
+  const unreadCount = state.messages.slice(lastReadIndex + 1).filter(message => message.profile !== state.profile).length;
   return { profile: state.profile, setProfile, name: state.name, setName, favorites: state.favorites, toggleFavorite,
     room: state.room, createRoom, joinRoom, leaveRoom, shareUrl: state.room ? buildInvitation(state.room) : null,
     getInviteLink: (profile: Profile) => state.room ? buildInvitation(state.room, profile) : null,
+    messages, sendMessage, pendingMessageIds: pendingMessages.map(op => op.id), unreadCount,
     syncStatus, error, retry: () => void sync(), clearError: () => setError(null) };
 }
